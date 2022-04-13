@@ -1,0 +1,25 @@
+"DOTAAbilities"
+{
+    "item_recipe_morbid_mask"
+    {
+        "BaseClass"                                           "item_datadriven"
+        "ItemCost"                                            "100"
+        "ItemShopTags"                                        ""
+        "ItemRecipe"                                          "1"
+        "ItemResult"                                          "item_morbid_mask"
+        "AbilityTextureName"                                  "item_recipe"
+    }
+    "item_morbid_mask"
+      {
+        "BaseClass"                                           "item_morbid_mask"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCorePointCost"                                   "0"
+        "ItemCost"                                            "0"
+        "ItemPurchasable"                                     "0"
+        //"ItemSellable"                                      "0"
+        "ItemKillable"                                        "0"
+        "ItemShareability"                                    "ITEM_NOT_SHAREABLE"
+    }
+}

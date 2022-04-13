@@ -1,0 +1,94 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Heaven's Halberd 2
+  //=================================================================================================================
+  "item_recipe_heavens_halberd_2"
+  {
+    "BaseClass"                                           "item_datadriven"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "7100"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_heavens_halberd_2"
+    "ItemRequirements"
+    {
+      "01"                                                "item_heavens_halberd;item_charged_essence"
+    }
+  }
+
+  //=================================================================================================================
+  // Heaven's Halberd 2
+  //=================================================================================================================
+  "item_heavens_halberd_2"
+  {
+    "BaseClass"                                           "item_heavens_halberd"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "FightRecapLevel"                                     "1"
+    "AbilityTextureName"                                  "custom/hh3"
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "18 17 16 15 14"
+    "AbilitySharedCooldown"                               "halberd"
+    "AbilityCastRange"                                    "600"
+    "AbilityCastPoint"                                    "0.0"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "200"
+    "ItemCost"                                            "7100"
+    "ItemShopTags"                                        "str;damage;evasion"
+    "ItemQuality"                                         "artifact"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemAliases"                                         "heaven's halberd 2;halberd 2"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "2"
+
+    "UpgradesItems"                                       "item_heavens_halberd_2;item_heavens_halberd_3;item_heavens_halberd_4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_evasion"                                   "20 25 30"
+      }
+      "02"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_strength"                                  "20 40 60"
+      }
+      "03"
+      {
+        "var_type"                                        "FIELD_FLOAT"
+        "disarm_range"                                    "5.0 5.5 6.0"
+      }
+      "04"
+      {
+        "var_type"                                        "FIELD_FLOAT"
+        "disarm_melee"                                    "3.0 3.5 4.0"
+      }
+      "05"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "status_resistance"                               "16 17 18"
+      }
+      "06"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "hp_regen_amp"                                    "20 30 40"
+      }
+    }
+  }
+}

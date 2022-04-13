@@ -1,0 +1,58 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Satanic 4
+  //=================================================================================================================
+  "item_recipe_satanic_4"
+  {
+    "ID"                                                  "3160"    // unique ID
+    "BaseClass"                                           "item_datadriven"
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "5050"
+    "ItemShopTags"                                        ""
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_satanic_4"
+    "ItemRequirements"
+    {
+      "01"                                                "item_satanic_3;item_charged_essence"
+    }
+  }
+
+  //=================================================================================================================
+  // Satanic 4
+  //=================================================================================================================
+  "item_satanic_4"
+  "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_strength"                                  "25"
+      }
+      "02"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_damage"                                    "55"
+      }
+      "04"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "lifesteal_percent"                               "20"
+      }
+      "05"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "unholy_lifesteal_percent"                        "164"
+      }
+      "06"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "unholy_lifesteal_total_tooltip"                  "184"
+      }
+      "07"
+      {
+        "var_type"                                        "FIELD_FLOAT"
+        "unholy_duration"                                 "3.0"
+      }
+    }
+}

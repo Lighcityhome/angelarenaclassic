@@ -1,0 +1,195 @@
+"DOTAAbilities"
+{
+    "item_tome_of_knowledge"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "ID"                            "257"                                                       // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+        "FightRecapLevel"               "1"
+                                                                                                                                                                                                                                                                                                                 
+                                                    
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "150"
+        "ItemShopTags"                  "consumable"
+        "ItemQuality"                   "consumable"
+        "ItemAliases"                   "tome of knowledge"
+        "ItemStackable"                 "0"
+        "ItemShareability"              "ITEM_FULLY_SHAREABLE"
+        "AbilitySharedCooldown"         "tome"
+        "ItemPermanent"                 "0"
+        "ItemInitialCharges"            "1"
+        "ItemDisplayCharges"            "1"
+        "ItemStockMax"                  "3"
+        "ItemStockInitial"              "0"
+        "ItemStockTime"                 "240.0"           
+        "ItemInitialStockTime"          "240.0"  
+        "BonusDelayedStockCount"        "0"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+        "ItemSupport"                   "1" 
+        "IsTempestDoubleClonable"       "0"
+
+
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "xp_bonus"              "125"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "xp_per_use"            "135"
+            }
+        }
+    }
+
+    "item_null_talisman"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "ID"                            "77"                                                        // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "505"
+        "ItemShopTags"                  "damage;int;agi;str"
+        "ItemQuality"                   "common"
+        "ItemAliases"                   "null talisman"
+        "ShouldBeInitiallySuggested"    "1"
+        "ShouldBeSuggested"             "1"
+        
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_intellect"       "10"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_strength"        "5"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_agility"         "5"
+            }
+            "04"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_spell_amp"       "5"
+            }
+            "05"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "bonus_mana_regen"      "1.2"
+            }
+        }
+    }
+
+    "item_wraith_band"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "ID"                            "75"                                                        // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "505"
+        "ItemShopTags"                  "damage;int;agi;str"
+        "ItemQuality"                   "common"
+        "ItemAliases"                   "wraith band"
+        "ShouldBeInitiallySuggested"    "1"
+        "ShouldBeSuggested"             "1"
+        
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_agility"         "10"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_strength"        "5"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_intellect"       "5"
+            }
+            "04"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_attack_speed"            "10"
+            }
+            "05"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "bonus_armor"           "4"
+            }
+        }
+    }
+
+    "item_bracer"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "ID"                            "73"                                                        // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "505"
+        "ItemShopTags"                  "damage;int;agi;str"
+        "ItemQuality"                   "common"
+        "ItemAliases"                   "bracer"
+        "ShouldBeInitiallySuggested"    "1"
+        "ShouldBeSuggested"             "1"
+        
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_strength"        "10"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_agility"         "5"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_intellect"       "5"
+            }
+            "04"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_damage"          "10"
+            }
+            "05"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "bonus_health_regen"    "5"
+            }
+        }
+    }
+}

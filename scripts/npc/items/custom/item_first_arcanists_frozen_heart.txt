@@ -1,0 +1,83 @@
+"DOTAAbilities"
+{
+    "item_recipe_first_arcanists_frozen_heart"
+    {
+        "BaseClass"                                           "item_datadriven"
+        "ItemCost"                                            ""
+        "ItemShopTags"                                        ""
+        "ItemRecipe"                                          "1"
+        "ItemResult"                                          "item_first_arcanists_frozen_heart"
+        "AbilityTextureName"                                  "item_recipe"
+
+        "ItemRequirements"
+        {
+            "01"                                                "item_shining_shivas_3;item_charged_essence;item_ice_core;item_rune_of_magic"
+        }
+    }
+
+    "item_first_arcanists_frozen_heart"
+    {
+        "BaseClass"                                           "item_lua"
+        "ScriptFile"                                          "items/custom/item_first_arcanists_frozen_heart.lua"
+        "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOUR_IMMEDIATE"
+        "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_ALL"
+        "AbilityTextureName"                                  "custom/frozen_first_arcanist_heart"
+        "AbilityCastPoint"              "0.0"
+        "AbilityCooldown"               "25.0"
+        "AbilityManaCost"               "400"
+        "AbilitySharedCooldown"         "shiva"
+        "precache"
+        {
+          "particle" "particles/items2_fx/shivas_guard_impact.vpcf"
+        }
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                                            "80500"
+        "ItemShopTags"                                        "shiva;shining;frozen;heart;frozen heart;arcanist"
+        "ItemQuality"                                         "artifact"
+        "ItemAliases"                                         "shiva;shining;frozen;heart;frozen heart;arcanist"
+        "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+        "UpgradesItems"                                       "item_first_arcanists_frozen_heart"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+              "var_type"                                        "FIELD_INTEGER"
+              "bonus_intellect"                                    "160"
+            }
+            "02"
+            {
+              "var_type"                                        "FIELD_INTEGER"
+              "bonus_strength"                                "60"
+            }
+            "03"
+            {
+              "var_type"                                        "FIELD_INTEGER"
+              "bonus_agility"                             "60"
+            }
+            "04"
+            {
+              "var_type"                                        "FIELD_INTEGER"
+              "bonus_armor"                             "60"
+            }
+            "04"
+            {
+              "var_type"                                        "FIELD_INTEGER"
+              "pulse_interval"                             "2.0"
+            }
+            "05"
+            {
+              "var_type"                                        "FIELD_INTEGER"
+              "pulse_damage"                             "250"
+            }
+            "06"
+            {
+              "var_type"                                        "FIELD_INTEGER"
+              "pulse_radius"                             "600"
+            }
+        }
+    }
+}

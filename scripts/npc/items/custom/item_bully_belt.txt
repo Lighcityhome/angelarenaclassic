@@ -1,0 +1,84 @@
+"DOTAAbilities"
+{
+    "item_recipe_bully_belt"
+    {
+        "BaseClass"                                           "item_datadriven"
+        "ItemCost"                                            "0"
+        "ItemShopTags"                                        ""
+        "ItemRecipe"                                          "1"
+        "ItemResult"                                          "item_bully_belt"
+        "AbilityTextureName"                                  "item_recipe"
+
+        "ItemRequirements"
+        {
+            "01"                                                "item_gauntlets;item_sobi_mask;item_wind_lace"
+        }
+    }
+
+    "item_bully_belt"
+    {
+        "BaseClass"                                           "item_lua"
+        "ScriptFile"                                          "items/custom/item_bully_belt.lua"
+        "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"                                  "custom/bully_belt"
+        "AbilityCastPoint"              "0.0"
+        "AbilityCooldown"               "24.0"
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                                            "565"
+        "ItemShopTags"                                        "bully_belt;bully;belt"
+        "ItemQuality"                                         "common"
+        "ItemAliases"                                         "bully_belt;bully;belt"
+        "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+        "MaxUpgradeLevel"                                     "1"
+        "ItemBaseLevel"                                       "1"
+
+        "UpgradesItems"                                       "item_equalizer;item_escape_plan;item_bully_belt;item_last_resort"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_strength"                                    "6"
+            }
+
+            "02"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_magical_armor"                                    "15"
+            }
+
+            "03"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_mana_regen"                                    "1"
+            }
+
+            "04"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_movement_speed"                                    "20"
+            }
+
+            "05"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_movement_speed_duration_tooltip"                                    "4"
+            }
+
+            "06"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_movement_speed_cooldown_tooltip"                                    "24"
+            }
+
+            "07"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_movement_speed_tooltip"                                    "20"
+            }
+        }
+    }
+}

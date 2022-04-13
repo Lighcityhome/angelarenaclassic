@@ -1,0 +1,30 @@
+"DOTAAbilities"
+{
+    "item_mango_of_intellect"
+    {   
+        "BaseClass"                                           "item_lua"
+        "ScriptFile"                                           "items/custom/item_mango_of_intellect.lua"
+        "AbilityTextureName"                                  "custom/mangointellect"
+        "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+        "FightRecapLevel"               "1"                  
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "2500"
+        "ItemShopTags"                  "consumable"
+        "ItemQuality"                   "consumable"
+        "ItemAliases"                   "mango of intellect"
+        "ItemStackable"                 "1"
+        "ItemShareability"              "ITEM_FULLY_SHAREABLE"
+        "AbilitySharedCooldown"         "mango"
+        "ItemPermanent"                 "0"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+        "ItemSupport"                   "1" 
+        "IsTempestDoubleClonable"       "0"
+        "ItemPurchasable"                                     "1"
+        "ItemSellable"                                      "1"
+        "ItemKillable"                                        "0"
+        "ItemInitialCharges"            "1"
+    }
+}

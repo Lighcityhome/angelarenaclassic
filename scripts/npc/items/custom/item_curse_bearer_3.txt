@@ -1,0 +1,158 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Monkey King Bar
+  //=================================================================================================================
+  "item_recipe_curse_bearer_3"
+  {
+  "BaseClass"                                           "item_datadriven"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "8140"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_curse_bearer_3"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemRequirements"
+    {
+      "01"                                                "item_curse_bearer_2;item_charged_essence"
+    }
+  }
+
+  //=================================================================================================================
+  // Monkey King Bar
+  //=================================================================================================================
+  "item_curse_bearer_3"
+  {
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/custom/item_curse_bearer.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO"
+    "AbilityTextureName"                                  "custom/cursebearer_3"
+    "precache"
+      {
+        "particle" "particles/econ/items/ancient_apparition/aa_blast_ti_5/ancient_apparition_ice_blast_explode_ti5.vpcf"
+        "particle" "particles/econ/items/lich/frozen_chains_ti6/lich_frozenchains_frostnova.vpcf"
+        "particle" "particles/generic_gameplay/generic_frozen.vpcf"
+        "particle" "particles/status_fx/status_effect_frost_lich.vpcf"
+        "particle" "particles/status_fx/status_effect_iceblast.vpcf"
+      }
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "24420"
+    "ItemShopTags"                                        "skadi;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "skadi"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "3"
+    "AbilityCooldown"               "15.0"
+    "UpgradesItems"                                       "item_curse_bearer;item_curse_bearer_2;item_curse_bearer_3;item_curse_bearer_4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_strength"                                    "28 56 84"
+      }
+      "02"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_agility"                                "28 56 84"
+      }
+      "03"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_intellect"                             "28 56 84"
+      }
+      "04"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_health"                             "500 1000 1500"
+      }
+      "05"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_mana"                             "200 400 600"
+      }
+      "06"
+      {
+        "var_type"                                        "FIELD_FLOAT"
+        "bonus_mana_regen"                             "2.0 4.0 6.0"
+      }
+     "07"
+      {
+          "var_type"                                        "FIELD_INTEGER"
+          "bonus_armor"                                    "2 4 6"
+      }
+     "08"
+      {
+          "var_type"                                        "FIELD_INTEGER"
+          "max_stacks"                                    "5"
+      }
+      "09"
+      {
+          "var_type"                                        "FIELD_INTEGER"
+          "explosion_damage"                                    "100 150 200"
+      }
+      "10"
+      {
+          "var_type"                                        "FIELD_INTEGER"
+          "explosion_slow"                                    "-50 -75 -100"
+      }
+      "11"
+      {
+          "var_type"                                        "FIELD_FLOAT"
+          "explosion_duration"                                    "1 1.5 2.0"
+      }
+      "12"
+      {
+          "var_type"                                        "FIELD_INTEGER"
+          "explosion_radius"                                    "400"
+      }
+      "13"
+      {
+          "var_type"                                        "FIELD_FLOAT"
+          "reduction_amount"                                    "-5"
+      }
+      "14"
+      {
+          "var_type"                                        "FIELD_FLOAT"
+          "reduction_interval"                                    "1.0"
+      }
+      "15"
+      {
+          "var_type"                                        "FIELD_INTEGER"
+          "affliction_duration"                                    "1 2 3"
+      }
+      "16"
+      {
+          "var_type"                                        "FIELD_FLOAT"
+          "frost_movement_speed_amount_pct"                                    "-50"
+      }
+      "17"
+      {
+          "var_type"                                        "FIELD_FLOAT"
+          "frost_attack_speed_amount"                                    "-50 -100 -150"
+      }
+      "18"
+      {
+          "var_type"                                        "FIELD_FLOAT"
+          "frost_healing_amount_pct"                                    "-40"
+      }
+      "19"
+      {
+          "var_type"                                        "FIELD_FLOAT"
+          "frost_duration"                                    "3 4 5"
+      }
+    }
+  }
+}

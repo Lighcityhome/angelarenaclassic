@@ -1,0 +1,111 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Monkey King Bar
+  //=================================================================================================================
+  "item_recipe_spiked_armor_2"
+  {
+  "BaseClass"                                           "item_datadriven"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "6975"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_spiked_armor_2"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemRequirements"
+    {
+      "01"                                                "item_spiked_armor;item_charged_essence"
+    }
+  }
+
+  //=================================================================================================================
+  // Monkey King Bar
+  //=================================================================================================================
+  "item_spiked_armor_2"
+  {
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/custom/item_spiked_armor.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "AbilityTextureName"                                  "custom/spikedarmor_2"
+    "AbilityCooldown"                                     "25"
+    "AbilitySharedCooldown"                               "blademail"
+    "AbilityManaCost"                                     "250"
+    "precache"
+        {
+          "soundfile" "sounds/items/blade_mail_damage.vsnd"
+          "soundfile" "sounds/items/blade_mail_damage.vsnd"
+        }
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "9850"
+    "ItemShopTags"                                        "blademail;mail;spikedmail;spiked;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "blademail;mail;spikedmail;spiked"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "2"
+
+    "UpgradesItems"                                       "item_spiked_armor;item_spiked_armor_2;item_spiked_armor_3;item_spiked_armor_4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_armor"                                     "16 24 32"
+      }
+      "02"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_damage"                                "40 80 120"
+      }
+      "03"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_all_stats"                             "25 50 75"
+      }
+
+      "04"
+      {
+        "var_type"                                        "FIELD_FLOAT"
+        "active_duration"                             "4.5"
+      }
+
+      "05"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "active_return_pct"                             "40 50 60"
+      }
+
+      "06"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "passive_return"                             "30 50 75"
+      }
+
+      "07"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "passive_return_pct"                             "30 40 50"
+      }
+
+      "08"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "active_regen_debuff"                             "-100"
+      }
+
+      "09"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "active_regen_debuff_duration"                             "1"
+      }
+    }
+  }
+}

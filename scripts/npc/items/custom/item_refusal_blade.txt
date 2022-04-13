@@ -1,0 +1,142 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Monkey King Bar
+  //=================================================================================================================
+  "item_recipe_refusal_blade"
+  {
+  "BaseClass"                                           "item_datadriven"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "0"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_refusal_blade"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemRequirements"
+    {
+      "01"                                                "item_diffusal_blade;item_nullifier"
+    }
+  }
+
+  //=================================================================================================================
+  // Monkey King Bar
+  //=================================================================================================================
+  "item_refusal_blade"
+  {
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/custom/item_refusal_blade.lua"
+    "AbilityTextureName"                                  "custom/refusalblade"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO"
+    "precache"
+      {
+        "soundfile" "sounds/items/nullifier_cast.vsnd"
+        "soundfile" "sounds/items/nullifier_target.vsnd"
+        "soundfile" "sounds/items/nullifier_slow.vsnd"
+        "particle" "particles/items4_fx/nullifier_mute.vpcf"
+        "particle" "particles/generic_gameplay/generic_manaburn.vpcf"
+      }
+    "AbilityCastRange"              "600"
+    "AbilityCastPoint"              "0.0"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "7875"
+    "ItemShopTags"                                        "refusal;diffusal;blade;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "refusal;diffusal;blade"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "1"
+    "AbilityCooldown"               "11.0"
+    "AbilityManaCost"               "100"
+    "UpgradesItems"                                       "item_refusal_blade;item_refusal_blade_2;item_refusal_blade_3;item_refusal_blade_4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_damage"                                    "80 160 240"
+      }
+      "02"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_agility"                                "24 48 72"
+      }
+      "03"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_intellect"                             "12 24 36"
+      }
+      "04"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_armor"                             "8 16 24"
+      }
+      "05"
+      {
+        "var_type"                                        "FIELD_FLOAT"
+        "bonus_health_regen"                             "6.0 12.0 18.0"
+      }
+      "06"
+      {
+        "var_type"            "FIELD_INTEGER"
+        "percent_damage_per_burn"   "100"
+      }
+      "07"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "mana_per_hit"      "40 80 120"
+      }
+      "08"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "mana_per_hit_pct"    "0"
+        "LinkedSpecialBonus"    "special_bonus_unique_antimage_7"
+      }
+      "09"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "silence_chance"    "0"
+      }
+      "10"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "silence_duration"    "0"
+      }
+      "11"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "illusion_percentage"   "25"
+      }
+
+      "12"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "mute_duration"     "5.0"
+      }
+      "13"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "projectile_speed"    "1100"
+      }
+      "14"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "slow_pct"        "-100"
+      }
+      "15"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "slow_interval_duration"  "0.5"
+      }
+    }
+  }
+}

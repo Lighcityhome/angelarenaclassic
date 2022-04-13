@@ -1,0 +1,37 @@
+"DOTAAbilities"
+{
+    "item_edible_aegis"
+      {
+        "BaseClass"                                           "item_lua"
+        "ScriptFile"                                          "items/custom/item_edible_aegis.lua"
+        "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "Model"                         "models/props_gameplay/aegis.vmdl"      
+        "Effect"                        "particles/generic_gameplay/dropped_aegis.vpcf"
+        "ItemQuality"                   "artifact"
+        "ItemContributesToNetWorthWhenDropped"  "0"
+        "AllowedInBackpack"             "0"
+
+        // Stats
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"                                  "aegis"
+
+        "precache"
+          {
+            "soundfile" "sounds/items/aegis_expire.vsnd"
+            "soundfile" "sounds/weapons/hero/skeleton_king/reincarnate.vsnd"
+            "particle" "particles/items_fx/aegis_respawn.vpcf"
+            "particle" "particles/items_fx/aegis_timer.vpcf"
+          }
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCorePointCost"                                   "0"
+        "ItemCost"                                            "0"
+        "ItemPurchasable"                                     "0"
+        "ItemSellable"                                      "1"
+        "ItemKillable"                                        "1"
+        "ItemInitialCharges"            "0"
+        "IsTempestDoubleClonable"       "0"
+        "ItemShareability"                                    "ITEM_NOT_SHAREABLE"
+    }
+}

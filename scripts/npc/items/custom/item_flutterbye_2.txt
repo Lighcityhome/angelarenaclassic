@@ -1,0 +1,78 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Monkey King Bar
+  //=================================================================================================================
+  "item_recipe_flutterbye_2"
+  {
+  "BaseClass"                                           "item_datadriven"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "7600"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_flutterbye_2"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemRequirements"
+    {
+      "01"                                                "item_flutterbye;item_charged_essence"
+    }
+  }
+
+  //=================================================================================================================
+  // Monkey King Bar
+  //=================================================================================================================
+  "item_flutterbye_2"
+  {
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/custom/item_flutterbye.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "custom/flutterbye_2"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "15200"
+    "ItemShopTags"                                        "butterfly;fly;flutter;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "butterfly;fly;flutter"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "2"
+    
+
+    "UpgradesItems"                                       "item_flutterbye;item_flutterbye_2;item_flutterbye_3;item_flutterbye_4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_agility"                                    "46 92 138"
+      }
+      "02"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_evasion"                                "35 40 45"
+      }
+      "03"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_attack_speed"                             "42 84 126"
+      }
+      "04"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_damage"                             "50 75 100"
+      }
+      "05"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_movement_speed_pct"                             "8 16 24"
+      }
+    }
+  }
+}

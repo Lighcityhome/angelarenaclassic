@@ -1,0 +1,155 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Monkey King Bar
+  //=================================================================================================================
+  "item_recipe_ultra_blink"
+  {
+  "BaseClass"                                           "item_datadriven"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "0"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_ultra_blink"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemRequirements"
+    {
+      "01"                                                "item_overwhelming_blink;item_swift_blink;item_arcane_blink"
+    }
+  }
+
+  //=================================================================================================================
+  // Monkey King Bar
+  //=================================================================================================================
+  "item_ultra_blink"
+  {
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/custom/item_ultra_blink.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_POINT"
+    "AbilityTextureName"                                  "custom/ultrablink"
+    "AbilityCastPoint"                                    "0.0"
+    "AbilityCooldown"                                     "14.0 13.5 13.0"
+    "AbilitySharedCooldown"                               "blink"
+    "precache"
+          {
+            "particle" "particles/items_fx/blink_dagger_start.vpcf"
+            "soundfile" "sounds/weapons/hero/antimage/blink_out.vsnd"
+            "particle" "particles/items_fx/blink_dagger_end.vpcf"
+            "particle" "particles/generic_gameplay/rune_arcane_owner_glow.vpcf"
+            "particle" "particles/items3_fx/blink_swift_buff_hands.vpcf"
+            "particle" "particles/items3_fx/blink_overwhelming_burst.vpcf"
+            "soundfile" "sounds/items/blink_overwhelming.vsnd"
+            "particle" "particles/items3_fx/blink_overwhelming_end.vpcf"
+            "particle" "particles/items3_fx/blink_overwhelming_start.vpcf"
+            "particle" "particles/items3_fx/blink_swift_end.vpcf"
+            "particle" "particles/items3_fx/blink_swift_start.vpcf"
+            "particle" "particles/items3_fx/blink_arcane_end.vpcf"
+            "particle" "particles/items3_fx/blink_arcane_start.vpcf"
+            "soundfile" "sounds/items/blink_arcane.vsnd"
+            "soundfile" "sounds/items/blink_swift.vsnd"
+            "particle" "particles/items3_fx/blink_swift_buff.vpcf"
+          }
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "20400"
+    "ItemShopTags"                                        "blink;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "curse;blink"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "1"
+    
+
+    "UpgradesItems"                                       "item_ultra_blink;item_ultra_blink_2;item_ultra_blink_3;item_ultra_blink_4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_all_stats"                                    "38 56 84"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "blink_range"     "1300 1400 1500"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "blink_damage_cooldown" "3.0"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "blink_range_clamp"   "960 1060 1160"
+      }
+      "05"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "base_cooldown"   "30"
+      }
+      "06"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "ultimate_cooldown"   "30"
+      }
+      "07"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "duration"    "6 7 8"
+      }
+      "08"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "cast_pct_improvement"    "50 55 60"
+      }
+      "09"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_movement"    "40 45 50"
+      }
+      "10"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_attack_speed"    "50 100 150"
+      }
+      "11"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_attack_damage"   "50 100 150"
+      }
+      "12"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "damage_pct"    "150"
+      }
+      "13"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "movement_slow"   "50 60 70"
+      }
+      "14"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "attack_slow"   "50 100 150"
+      }
+      "15"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "radius"    "800"
+      }
+      "16"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "initial_damage"    "200 300 400"
+      }
+    }
+  }
+}

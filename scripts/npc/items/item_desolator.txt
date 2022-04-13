@@ -1,0 +1,65 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Monkey King Bar
+  //=================================================================================================================
+  "item_recipe_desolator"
+  {
+  "BaseClass"                                           "item_datadriven"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "0"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_desolator"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemRequirements"
+    {
+      "01"                                                "item_mithril_hammer;item_mithril_hammer;item_blight_stone"
+    }
+  }
+
+  //=================================================================================================================
+  // Monkey King Bar
+  //=================================================================================================================
+  "item_desolator"
+  {
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "custom/desolator1"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "3500"
+    "ItemShopTags"                                        "damage;armor;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "desolator"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "MaxUpgradeLevel"                                     "1"
+    "ItemBaseLevel"                                       "1"
+
+    "UpgradesItems"                                       "item_desolator;item_desolator_2b;item_desolator_3;item_desolator_4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_damage"                                    "55"
+      }
+      "02"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "corruption_armor"                                "-6"
+      }
+      "03"
+      {
+        "var_type"                                        "FIELD_FLOAT"
+        "corruption_duration"                             "7.0"
+      }
+    }
+  }
+}

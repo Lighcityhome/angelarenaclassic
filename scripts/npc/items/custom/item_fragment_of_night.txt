@@ -1,0 +1,21 @@
+"DOTAAbilities"
+{
+    "item_fragment_of_night"
+      {
+        "BaseClass"                                           "item_datadriven"
+        "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Stats
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"                                  "custom/balanar_boss_item"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCorePointCost"                                   "0"
+        "ItemCost"                                            "0"
+        "ItemPurchasable"                                     "0"
+        //"ItemSellable"                                      "0"
+        "ItemKillable"                                        "1"
+        "ItemShareability"                                    "ITEM_FULLY_SHAREABLE"
+    }
+}

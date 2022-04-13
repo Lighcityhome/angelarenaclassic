@@ -1,0 +1,93 @@
+"DOTAAbilities"
+{
+    "item_recipe_gamma_orb_3"
+    {
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                                           "item_datadriven"
+        "ItemCost"                      "5000"   
+        "ItemShopTags"                  ""
+        
+        // Recipe
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_gamma_orb_3"
+        "ItemRequirements"
+        {
+            "01"                        "item_gamma_orb_2;item_charged_essence"
+        }
+    }
+    
+    //=================================================================================================================
+    // Silver Edge
+    //=================================================================================================================
+    "item_gamma_orb_3"
+    {  
+        "BaseClass"                                           "item_lua"
+        "ScriptFile"                                          "items/custom/item_gamma_orb.lua"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "FightRecapLevel"               "1"
+        "precache"
+          {
+            "soundfile" "sounds/items/refresher.vsnd"
+            "particle" "particles/items2_fx/refresher.vpcf"
+          }
+
+        // Stats        
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "80.0"
+        "AbilitySharedCooldown"         "refresher"
+
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "200"
+        "ItemCost"                      "23400"
+        "ItemShopTags"                  "regen_health;regen_mana;hard_to_tag"
+        "ItemQuality"                   "epic"
+        "ItemAliases"                   "gamma orb"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        "ShouldBeSuggested"             "1"
+        "MaxUpgradeLevel"                                     "3"
+        "ItemBaseLevel"                                       "3"
+        "AbilityTextureName"                                  "custom/gammaorb3"
+
+        "UpgradesItems"                                       "item_gamma_orb;item_gamma_orb_2;item_gamma_orb_3"
+        
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_strength"          "0 20 40"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_agility"    "0 20 40"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_intellect"     "30 70 100"
+            }
+            "04"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "bonus_health_regen"   "14.0 28.0 42.0"
+            }
+            "05"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "bonus_mana_regen"    "12.0 24.0 36.0"
+            }
+            "06"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "cast_point_reduction" "25 35 45"
+            }
+        }
+    }
+}

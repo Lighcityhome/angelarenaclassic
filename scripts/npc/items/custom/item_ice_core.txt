@@ -1,0 +1,21 @@
+"DOTAAbilities"
+{
+    "item_ice_core"
+      {
+        "BaseClass"                                           "item_datadriven"
+        "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Stats
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"                                  "custom/ice_core"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCorePointCost"                                   "0"
+        "ItemCost"                                            "20000"
+        "ItemPurchasable"                                     "0"
+        "ItemSellable"                                      "1"
+        "ItemKillable"                                        "1"
+        "ItemShareability"                                    "ITEM_FULLY_SHAREABLE"
+    }
+}

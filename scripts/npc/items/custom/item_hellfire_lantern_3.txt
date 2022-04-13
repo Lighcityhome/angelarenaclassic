@@ -1,0 +1,96 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Monkey King Bar
+  //=================================================================================================================
+  "item_recipe_hellfire_lantern_3"
+  {
+  "BaseClass"                                           "item_datadriven"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "6900"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_hellfire_lantern_3"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemRequirements"
+    {
+      "01"                                                "item_hellfire_lantern_2;item_charged_essence"
+    }
+  }
+
+  //=================================================================================================================
+  // Monkey King Bar
+  //=================================================================================================================
+  "item_hellfire_lantern_3"
+  {
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/custom/item_hellfire_lantern.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "custom/hellfirelantern_3"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "33600"
+    "ItemShopTags"                                        "hellfire;lantern;radiance;dot;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "hellfire;lantern;radiance;dot"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "3"
+    "precache"
+      {
+        "particle" "particles/status_fx/status_effect_burn.vpcf"
+      }
+
+    "UpgradesItems"                                       "item_hellfire_lantern;item_hellfire_lantern_2;item_hellfire_lantern_3;item_hellfire_lantern_4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "02"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_damage"                                "80 160 240"
+      }
+      "03"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_health_regen"                             "8 16 24"
+      }
+      "04"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_armor"                             "8 16 24"
+      }
+      "05"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "lifesteal_percent"                             "30 40 50"
+      }
+      "06"
+      {
+        "var_type"                                        "FIELD_FLOAT"
+        "burn_damage"                             "50 75 100"
+      }
+      "07"
+      {
+          "var_type"                                        "FIELD_INTEGER"
+          "burn_blind"                                    "2"
+      }
+      "08"
+      {
+          "var_type"                                        "FIELD_INTEGER"
+          "burn_stacks"                                    "5 6 7"
+      }
+      "09"
+      {
+          "var_type"                                        "FIELD_INTEGER"
+          "burn_duration"                                    "3"
+      }
+    }
+  }
+}

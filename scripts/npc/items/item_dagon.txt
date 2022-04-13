@@ -1,0 +1,92 @@
+"DOTAAbilities"
+{
+  "item_recipe_dagon"
+  {
+    "Model"             "models/props_gameplay/recipe.vmdl"
+    
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"            "1250"  
+    "ItemShopTags"          ""
+    
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"          "1"
+    "ItemResult"          "item_dagon"
+    "ItemRequirements"
+    {
+      "01"            "item_staff_of_wizardry;item_crown"
+    }
+  }
+
+  "item_dagon"
+  {
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "FightRecapLevel"       "1"
+    "AbilityTextureName"                                  "custom/dagon"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"        "700 800 850 900"
+    "AbilityCastPoint"        "0.0"
+    "AbilityCooldown"       "35.0 30.0 25.0 20.0"
+    "AbilitySharedCooldown"     "dagon"
+    "MaxUpgradeLevel"       "4"
+    "ItemBaseLevel"         "1"
+    "ItemDeclarations"        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"       "100"
+    "ItemCost"            "2700"
+    "ItemShopTags"          "damage;int;str;agi;hard_to_tag"
+    "ItemQuality"         "rare"  
+    "ItemAliases"         "dagon 1"
+    
+    "UpgradesItems"         "item_dagon;item_dagon_2;item_dagon_3;item_dagon_4"
+    "ShouldBeSuggested"       "1"
+    
+    // Special  
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_int"   "14 28 40 70"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_str"   "6 12 24 45"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_agi"   "6 12 24 45"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "damage"        "400 700 1400 2100"
+      }
+      "05"
+      {
+        "var_type"          "FIELD_FLOAT"
+        "damage_delay"        "0"
+      }
+      "06"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "mana_cost_tooltip"   "120 140 160 180"
+      }
+      "07" 
+      {
+        "var_type"        "FIELD_INTEGER"
+        "range_tooltip"   "700 800 850 900"
+      }
+    }
+  }
+}

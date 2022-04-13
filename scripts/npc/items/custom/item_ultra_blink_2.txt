@@ -1,0 +1,136 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Monkey King Bar
+  //=================================================================================================================
+  "item_recipe_ultra_blink_2"
+  {
+  "BaseClass"                                           "item_datadriven"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "10200"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_ultra_blink_2"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemRequirements"
+    {
+      "01"                                                "item_ultra_blink;item_charged_essence"
+    }
+  }
+
+  //=================================================================================================================
+  // Monkey King Bar
+  //=================================================================================================================
+  "item_ultra_blink_2"
+  {
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/custom/item_ultra_blink.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_POINT"
+    "AbilityTextureName"                                  "custom/ultrablink2"
+    "AbilityCastPoint"                                    "0.0"
+    "AbilityCooldown"                                     "14.0 13.5 13.0"
+    "AbilitySharedCooldown"                               "blink"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "30600"
+    "ItemShopTags"                                        "blink;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "curse;blink"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "2"
+    
+
+    "UpgradesItems"                                       "item_ultra_blink;item_ultra_blink_2;item_ultra_blink_3;item_ultra_blink_4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_all_stats"                                    "38 56 84"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "blink_range"     "1300 1400 1500"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "blink_damage_cooldown" "3.0"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "blink_range_clamp"   "960 1060 1160"
+      }
+      "05"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "base_cooldown"   "30"
+      }
+      "06"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "ultimate_cooldown"   "30"
+      }
+      "07"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "duration"    "6 7 8"
+      }
+      "08"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "cast_pct_improvement"    "50 55 60"
+      }
+      "09"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_movement"    "40 45 50"
+      }
+      "10"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_attack_speed"    "50 100 150"
+      }
+      "11"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_attack_damage"   "50 100 150"
+      }
+      "12"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "damage_pct"    "150"
+      }
+      "13"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "movement_slow"   "50 60 70"
+      }
+      "14"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "attack_slow"   "50 100 150"
+      }
+      "15"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "radius"    "800"
+      }
+      "16"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "initial_damage"    "200 300 400"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+"DOTAAbilities"
+{
+    "item_recipe_magicians_luster"
+    {
+        "BaseClass"                                           "item_datadriven"
+        "ItemCost"                                            "0"
+        "ItemShopTags"                                        ""
+        "ItemRecipe"                                          "1"
+        "ItemResult"                                          "item_magicians_luster"
+        "AbilityTextureName"                                  "item_recipe"
+
+        "ItemRequirements"
+        {
+            "01"                                                "item_voodoo_mask;item_void_stone;"
+        }
+    }
+
+    "item_magicians_luster"
+    {
+        "BaseClass"                                           "item_lua"
+        "ScriptFile"                                          "items/custom/item_magicians_luster.lua"
+        "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"                                  "custom/magiciansluster"
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                                            "1525"
+        "ItemShopTags"                                        "magicians;luster"
+        "ItemQuality"                                         "common"
+        "ItemAliases"                                         "magicians;luster"
+        "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+        "UpgradesItems"                                       "item_magicians_luster;item_bloodstone_strygwyr"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_mana_regen"                                    "4"
+            }
+
+            "02"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "spell_amp"                                    "4"
+            }
+
+            "03"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "hero_lifesteal"                    "10"
+            }
+
+            "04"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "creep_lifesteal"                   "10"
+            }
+
+            "05"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "life_steal"                   "15"
+            }
+        }
+    }
+}

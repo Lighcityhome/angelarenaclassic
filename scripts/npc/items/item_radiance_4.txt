@@ -1,0 +1,83 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Radiance 4
+  //=================================================================================================================
+  "item_recipe_radiance_4"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                                                  "4002"
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "5150"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_radiance_4"
+    "ItemRequirements"
+    {
+      "01"                                                "item_radiance_3;item_charged_essence"
+    }
+  }
+
+  //=================================================================================================================
+  // Radiance 4
+  //=================================================================================================================
+  "item_radiance_4"
+  {
+    "BaseClass"                                           "item_radiance"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE"
+    "AbilityTextureName"                                  "custom/radiance4"
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "4"
+    "ItemBaseLevel"                                       "4"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "20600"
+    "ItemShopTags"                                        "damage"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "radiance 4"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "UpgradesItems"                                       "item_radiance;item_radiance_2;item_radiance_3;item_radiance_4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_damage"                                    "60 120 180"
+      }
+      "03" // 02
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "aura_damage"                                     "60 120 180"
+      }
+      "04"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "aura_damage_illusions"                           "60 120 180"
+      }
+      "05"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "blind_pct"                                       "17 20 23"
+      }
+      "06"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "aura_radius"                                     "700"
+      }
+    }
+  }
+}

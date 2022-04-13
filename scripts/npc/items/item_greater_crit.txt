@@ -1,0 +1,65 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Monkey King Bar
+  //=================================================================================================================
+  "item_recipe_greater_crit"
+  {
+      "BaseClass"                                           "item_datadriven"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "1000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_greater_crit"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemRequirements"
+    {
+      "01"                                                "item_demon_edge;item_lesser_crit"
+    }
+  }
+
+  //=================================================================================================================
+  // Monkey King Bar
+  //=================================================================================================================
+  "item_greater_crit"
+  {
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "custom/greater_crit"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "4150"
+    "ItemShopTags"                                        "damage;attack_speed;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "daedalus"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "MaxUpgradeLevel"                                     "4"
+    "ItemBaseLevel"                                       "1"
+
+    "UpgradesItems"                                       "item_greater_crit;item_greater_crit_2;item_greater_crit_3;item_greater_crit_4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_damage"                                    "88 176 264"
+      }
+      "02"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "crit_chance"                                     "30 35 40"
+      }
+      "03"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "crit_multiplier"                                 "225 230 235"
+      }
+    }
+  }
+}

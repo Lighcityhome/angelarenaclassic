@@ -1,0 +1,103 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Monkey King Bar
+  //=================================================================================================================
+  "item_recipe_blade_of_midas"
+  {
+  "BaseClass"                                           "item_datadriven"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "850"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_blade_of_midas"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemRequirements"
+    {
+      "01"                                                "item_hand_of_midas;item_claymore"
+    }
+  }
+
+  //=================================================================================================================
+  // Monkey King Bar
+  //=================================================================================================================
+  "item_blade_of_midas"
+  {
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/custom/item_blade_of_midas.lua"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_CREEP"
+    "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+    "AbilityTextureName"                                  "custom/bladeofmidas"
+    "AbilityCooldown"                                     "90"
+    "precache"
+      {
+        "soundfile" "sounds/items/item_handofmidas.vsnd"
+      }
+      "AbilityCastRange"              "600"
+    "AbilityCastPoint"              "0.0"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "4400"
+    "ItemShopTags"                                        "gold;midas;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "midas;blade"
+    "AbilitySharedCooldown"                               "item_blade_of_midas_and_item_golden_crusader_and_item_hand_of_midas_share_cd_transmute"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "MaxUpgradeLevel"                                     "1"
+    "ItemBaseLevel"                                       "1"
+
+    "UpgradesItems"                                       "item_hand_of_midas;item_blade_of_midas;item_golden_crusader"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_damage"                                "30"
+      }
+      "02"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_attack_speed"                             "40"
+      }
+      "03"
+      {
+        "var_type"                                        "FIELD_FLOAT"
+        "bounty_multiplier"                             "3.0"
+      }
+      "04"
+      {
+        "var_type"                                        "FIELD_FLOAT"
+        "transmute_multiplier"                             "2.2"
+      }
+      "05"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "transmute_gold"                             "320"
+      }
+      "06"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "gold_from_damage_multiplier"                             "10"
+      }
+      "07"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "gold_from_damage_max"                             "100"
+      }
+      "08"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "gold_from_damage_cd"                             "10"
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+"DOTAAbilities"
+{
+    //=================================================================================================================
+    // Recipe: Hand of Midas
+    //=================================================================================================================
+    "item_recipe_hand_of_midas"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "ID"                            "64"                                                        // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+        "Model"                         "models/props_gameplay/recipe.vmdl"
+        
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "1750"  
+        "ItemShopTags"                  ""
+        "ItemAliases"                   "hom"
+        
+        // Recipe
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_hand_of_midas"
+        "ItemRequirements"
+        {
+            "01"                        "item_gloves*"      
+        }
+    }
+    
+    //=================================================================================================================
+    // Hand of Midas
+    //=================================================================================================================
+    "item_hand_of_midas"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "ID"                            "65"                                                        // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_CREEP"
+        "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+        "AbilitySharedCooldown"                               "item_blade_of_midas_and_item_golden_crusader_and_item_hand_of_midas_share_cd_transmute"
+
+        // Stats
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "600"
+        "AbilityCastPoint"              "0.0"
+        "AbilityCooldown"               "90.0"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "0"
+        "ItemCost"                      "2200"
+        "ItemShopTags"                  "attack_speed;hard_to_tag"
+        "ItemQuality"                   "common"
+        "ItemAliases"                   "hand of midas"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+        "ShouldBeSuggested"             "1"
+        
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_attack_speed"    "40"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "xp_multiplier"         "2.1"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_gold"            "160"
+            }
+        }
+    }
+   
+}

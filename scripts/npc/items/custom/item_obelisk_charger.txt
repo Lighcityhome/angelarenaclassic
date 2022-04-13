@@ -1,0 +1,34 @@
+"DOTAAbilities"
+{
+    "item_obelisk_charger"
+      {
+        "BaseClass"                                           "item_lua"
+        "ScriptFile"                                          "items/custom/item_obelisk_charger.lua"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_BUILDING"
+        "AbilityChannelTime"      "11.0"
+        "AbilityCastRange"      "100"
+        "AbilityCastAnimation"      "ACT_DOTA_GENERIC_CHANNEL_1"
+
+        "precache"
+        {
+          "particle" "particles/units/heroes/hero_death_prophet/death_prophet_spiritsiphon.vpcf"
+        }
+
+        // Stats
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"                                  "custom/obelisk_conduit"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCorePointCost"                                   "0"
+        "ItemCost"                                            "0"
+        "ItemPurchasable"                                     "0"
+        "ItemSellable"                                      "1"
+        "ItemKillable"                                        "1"
+        "ItemShareability"                                    "ITEM_FULLY_SHAREABLE"
+        "ItemInitialCharges"            "100"
+        "ItemDisplayCharges"            "1"
+    }
+}

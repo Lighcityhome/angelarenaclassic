@@ -1,0 +1,93 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Monkey King Bar
+  //=================================================================================================================
+  "item_recipe_kings_guard_3"
+  {
+  "BaseClass"                                           "item_datadriven"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "8825"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_kings_guard_3"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemRequirements"
+    {
+      "01"                                                "item_kings_guard_2;item_charged_essence"
+    }
+  }
+
+  //=================================================================================================================
+  // Monkey King Bar
+  //=================================================================================================================
+  "item_kings_guard_3"
+  {
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/custom/item_kings_guard.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "custom/kings_guard_3"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "26000"
+    "ItemShopTags"                                        "armor;assault;kings;guard;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "armor;assault;kings;guard"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "3"
+
+    "UpgradesItems"                                       "item_kings_guard;item_kings_guard_2;item_kings_guard_3;item_kings_guard_4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_health"                                    "500 750 1000"
+      }
+      "02"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_all_stats"                                "10 25 50"
+      }
+      "03"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_attack_speed"                             "30 50 100"
+      }
+      "04"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_armor"                             "16 20 40"
+      }
+
+      "05"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "aura_bonus_armor"                             "6 8 16"
+      }
+      "06"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "aura_armor_reduction"                             "-5 -8 -16"
+      }
+      "07"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "aura_block_damage"                             "70 100 200"
+      }
+      "08"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "aura_attack_speed"                             "100 150 200"
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Monkey King Bar
+  //=================================================================================================================
+  "item_recipe_bfury_boots_3"
+  {
+  "BaseClass"                                           "item_datadriven"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "6300"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_bfury_boots_3"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemRequirements"
+    {
+      "01"                                                "item_bfury_boots_2;item_charged_essence"
+    }
+  }
+
+  //=================================================================================================================
+  // Monkey King Bar
+  //=================================================================================================================
+  "item_bfury_boots_3"
+  {
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/custom/item_bfury_boots.lua"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_TREE | DOTA_UNIT_TARGET_CUSTOM"
+    "AbilityTextureName"                                  "custom/bfuryboots_3"
+    "AbilityCastRange"              "165"
+    "AbilityCastPoint"              "0.0"
+    "AbilityCooldown"               "3.0"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "24600"
+    "ItemShopTags"                                        "damage;speed;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "battlefury;bfury;boots"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "3"
+
+    "UpgradesItems"                                       "item_bfury_boots;item_bfury_boots_2;item_bfury_boots_3;item_bfury_boots_4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_movement_speed"                                    "80 100 120"
+      }
+      "02"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_damage"                                "60 100 160"
+      }
+      "03"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_attack_speed"                             "30 60 90"
+      }
+      "04"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_all_stats"                             "10 30 60"
+      }
+      "05"
+      {
+        "var_type"                                        "FIELD_FLOAT"
+        "bonus_health_regen"                             "7.5 10.0 20.0"
+      }
+      "06"
+      {
+        "var_type"                                        "FIELD_FLOAT"
+        "bonus_mana_regen"                             "2.75 4.0 8.0"
+      }
+       "07"
+        {
+            "var_type"                                        "FIELD_INTEGER"
+            "bonus_cleave_hero"                                    "70 80 90"
+        }
+
+        "08"
+        {
+            "var_type"                                        "FIELD_INTEGER"
+            "bonus_cleave_creep"                                    "70 80 90"
+        }
+      "09"
+      {
+          "var_type"                                        "FIELD_INTEGER"
+          "quelling_bonus"                                    "18"
+      }
+
+      "10"
+      {
+          "var_type"                                        "FIELD_INTEGER"
+          "quelling_bonus_ranged"                                    "9"
+      }
+
+      "11"
+      {
+          "var_type"                                        "FIELD_INTEGER"
+          "tooltip_quelling_bonus"                                    "18"
+      }
+
+      "12"
+      {
+          "var_type"                                        "FIELD_INTEGER"
+          "tooltip_quelling_bonus_ranged"                                    "9"
+      }
+    }
+  }
+}

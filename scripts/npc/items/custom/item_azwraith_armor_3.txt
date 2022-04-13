@@ -1,0 +1,127 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Monkey King Bar
+  //=================================================================================================================
+  "item_recipe_azwraith_armor_3"
+  {
+  "BaseClass"                                           "item_datadriven"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "6000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_azwraith_armor_3"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemRequirements"
+    {
+      "01"                                                "item_azwraith_armor_2;item_charged_essence"
+    }
+  }
+
+  //=================================================================================================================
+  // Monkey King Bar
+  //=================================================================================================================
+  "item_azwraith_armor_3"
+  {
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/custom/item_azwraith_armor.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_TOGGLE"
+    "AbilityTextureName"                                  "custom/azwraith_armor_3"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "18000"
+    "ItemShopTags"                                        "azwraith;armor;azwraith armor;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "azwraith;armor;azwraith armor"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "3"
+    
+    "UpgradesItems"                                       "item_azwraith_armor;item_azwraith_armor_2;item_azwraith_armor_3;item_azwraith_armor_4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_hp_regen_pct"   "1 2 3"
+      }
+      "02"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_strength"   "12 24 36"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_agility"   "45 90 135"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_attack_speed"   "40 80 120"
+      }
+      "05"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_movespeed_pct"   "10 14 18"
+      }
+      "06"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "aura_radius"   "600"
+      }
+      "07"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "aura_reduction_stack"   "-8"
+      }
+      "08"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "aura_reduction_max"   "-50"
+      }
+      "09"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_illusion_duration_pct"   "40 45 50"
+      }
+      "10"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_magical_attack_damage"   "5 6 7"
+      }
+      "11"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_cleave_reduction_pct"   "-30 -40 -50"
+      }
+      "12"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_debuff_duration"   "20 25 30"
+      }
+      "13"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_magical_resistance_shred"   "-25 -30 -35"
+      }
+      "14"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "bonus_magical_resistance_shred_duration"   "3 4 5"
+      }
+      "15"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "bonus_magical_resistance_shred_cost_pct"   "3.0 4.0 5.0"
+      }
+    }
+  }
+}

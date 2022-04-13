@@ -1,0 +1,80 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Monkey King Bar
+  //=================================================================================================================
+  "item_recipe_swiftness_boots_3"
+  {
+  "BaseClass"                                           "item_datadriven"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "2000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_swiftness_boots_3"
+    "AbilityTextureName"                                  "item_recipe"
+    "ItemRequirements"
+    {
+      "01"                                                "item_swiftness_boots_2;item_charged_essence"
+    }
+  }
+
+  //=================================================================================================================
+  // Monkey King Bar
+  //=================================================================================================================
+  "item_swiftness_boots_3"
+  {
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/custom/item_swiftness_boots.lua"
+    "AbilityTextureName"                                  "custom/wormholeboots_3"
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NOASSIST | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+    "AbilityUnitTargetTeam"     "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_BUILDING"
+    "AbilityUnitTargetFlags"    "DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+    "AbilityChannelTime"      "3"
+    "AbilityCastPoint"        "0"
+    "AbilityChannelAnimation"   "ACT_DOTA_TELEPORT"
+    "AbilityCooldown" "30"
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "20000"
+    "ItemShopTags"                                        "damage;speed;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "travel;tp;boots;swiftness"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "3"
+    "precache"
+    {
+      "particle" "particles/items2_fx/sange_maim.vpcf"
+      "particle" "particles/econ/events/ti6/teleport_end_ti6.vpcf"
+      "particle" "particles/econ/events/ti6/teleport_start_ti6.vpcf"
+      "particle" "particles/econ/events/ti6/teleport_end_ti6_ground_flash.vpcf"
+    }
+    "UpgradesItems"                                       "item_swiftness_boots;item_swiftness_boots_2;item_swiftness_boots_3;item_swiftness_boots_4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"                                        "FIELD_INTEGER"
+        "bonus_movement_speed"                                    "120 140 160"
+      }
+      "02"
+      {
+        "var_type"                                        "FIELD_FLOAT"
+        "bonus_movement_speed_pct"                             "20 25 30"
+      }
+      "03"
+      {
+        "var_type"                                        "FIELD_FLOAT"
+        "bonus_all_stats"                             "25 50 75"
+      }
+    }
+  }
+}

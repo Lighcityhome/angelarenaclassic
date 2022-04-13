@@ -1,0 +1,122 @@
+"DOTAAbilities"
+{
+    "item_recipe_last_resort"
+    {
+        "BaseClass"                                           "item_datadriven"
+        "ItemCost"                                            "0"
+        "ItemShopTags"                                        ""
+        "ItemRecipe"                                          "1"
+        "ItemResult"                                          "item_last_resort"
+        "AbilityTextureName"                                  "item_recipe"
+
+        "ItemRequirements"
+        {
+            "01"                                                "item_equalizer;item_escape_plan;item_bully_belt"
+        }
+    }
+
+    "item_last_resort"
+    {
+        "BaseClass"                                           "item_lua"
+        "ScriptFile"                                          "items/custom/item_last_resort.lua"
+        "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"                                  "custom/last_resort"
+        "AbilityCastPoint"              "0.0"
+        "AbilityCooldown"               "30.0"
+        "AbilityManaCost"               "100"
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                                            "1900"
+        "ItemShopTags"                                        "last_resort"
+        "ItemQuality"                                         "common"
+        "ItemAliases"                                         "last_resort"
+        "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+        "MaxUpgradeLevel"                                     "1"
+        "ItemBaseLevel"                                       "1"
+        "AbilitySharedCooldown"         "salve"
+
+        "UpgradesItems"                                       "item_equalizer;item_escape_plan;item_bully_belt;item_last_resort"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_health"                                    "175"
+            }
+
+            "02"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_strength"                                    "12"
+            }
+
+            "03"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_agility"                                    "7"
+            }
+
+            "04"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_intellect"                                    "7"
+            }
+
+            "05"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_magical_armor"                                    "15"
+            }
+
+            "06"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_health_regen"                                    "5"
+            }
+
+            "07"
+            {
+                "var_type"                                        "FIELD_FLOAT"
+                "bonus_mana_regen"                                    "2.5"
+            }
+
+            "08"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_movement_speed"                                    "30"
+            }
+
+            "09"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_duration_tooltip"                                    "10"
+            }
+
+            "10"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_armor_tooltip"                                    "5"
+            }
+
+            "11"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_movement_speed_tooltip"                                    "30"
+            }
+
+            "12"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_health_regen_tooltip"                                    "70"
+            }
+
+            "13"
+            {
+                "var_type"                                        "FIELD_INTEGER"
+                "bonus_armor"                                    "2"
+            }
+        }
+    }
+}
