@@ -44904,10 +44904,10 @@
 		{
 				"max_level"				"10000"
 				"increase_time"			"60"
-				"increase_damage"		"2"
-				"increase_aspd"			"2"
-				"increase_health"		"20"
-				"increase_armor"		"0.5"
+				"increase_damage"		"10"
+				"increase_aspd"			"5"
+				"increase_health"		"50"
+				"increase_armor"		"0.25"
 				"increase_gold"			"10"
 				"increase_xp"			"10"
 		}
@@ -45682,7 +45682,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"3"
+				"bonus_armor"			"1"
 			}
 			"02"
 			{

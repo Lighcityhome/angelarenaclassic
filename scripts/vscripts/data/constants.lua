@@ -1,0 +1,22 @@
+HERO_ASSIST_RANGE = 1300
+MAP_LENGTH = 8192
+MAP_BORDER = 512
+
+LEVELS_WITHOUT_ABILITY_POINTS = {
+	[17] = true,
+	[19] = true,
+	[21] = true,
+	[22] = true,
+	[23] = true,
+	[24] = true,
+	-- also all of the levels above 25
+}
+
+-- TODO: These enums appear to be outdated
+DOTA_ITEM_SLOT_10 = DOTA_ITEM_SLOT_9 + 1
+DOTA_STASH_SLOT_1 = DOTA_STASH_SLOT_1 + 1
+DOTA_STASH_SLOT_2 = DOTA_STASH_SLOT_2 + 1
+DOTA_STASH_SLOT_3 = DOTA_STASH_SLOT_3 + 1
+DOTA_STASH_SLOT_4 = DOTA_STASH_SLOT_4 + 1
+DOTA_STASH_SLOT_5 = DOTA_STASH_SLOT_5 + 1
+DOTA_STASH_SLOT_6 = DOTA_STASH_SLOT_6 + 1

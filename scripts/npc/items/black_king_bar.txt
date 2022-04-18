@@ -1,0 +1,216 @@
+""
+{
+	"item_titanium_fruit"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"item_arena/titanium_fruit"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCooldown"				"80"
+		"ItemCost"						"250"
+		"ItemStackable"					"1"
+		"ItemInitialCharges"			"1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"5.0"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_item_titanium_fruit"
+				"Target" 		"CASTER"
+				"Duration"		"%duration"
+			}
+
+			"RunScript"
+			{
+				"ScriptFile"	"kv.lua"
+				"Function"		"SpendChargeRight"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_titanium_fruit"
+			{
+				"IsBuff"			"1"
+				"TextureName"		"item_arena/titanium_fruit"
+
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"        "particles/econ/courier/courier_greevil_orange/courier_greevil_orange_ambient_3.vpcf"
+						"EffectAttachType"  "follow_origin"
+						"Target"            "TARGET"
+					}
+				}
+
+				"States"
+				{
+					"MODIFIER_STATE_MAGIC_IMMUNE"		"MODIFIER_STATE_VALUE_ENABLED"
+				}
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_MAGICAL"		"1"
+				}
+			}
+		}
+	}
+
+	"item_recipe_titanium_bar"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"13075"
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_titanium_bar"
+		"ItemRequirements"
+		{
+			"01"						"item_black_king_bar;item_ghost;item_titanium_fruit;item_moon_dust"
+		}
+	}
+
+	"item_titanium_bar"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"item_arena/titanium_bar"
+		"FightRecapLevel"				"2"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"              "0"
+		"AbilityCooldown"				"60"
+		"AbilityManaCost"				"0"
+		"ItemShopTags"					"str;damage;hard_to_tag"
+		"ItemQuality"					"legendary"
+		"ItemAliases"					"bkb;titanium bar;black king bar"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"AbilitySharedCooldown"			"black_king_bar"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_strength"				"40"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_agility"					"10"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_intellect"				"10"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_damage"					"100"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"duration"						"8.0"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"active_damage_reduction_pct"	"-30"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"active_bonus_strength"			"60"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"active_bonus_attackspeed"		"200"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"kv.lua"
+				"Function"		"KVPurge"
+				"RemoveDebuffs"	"1"
+				"RemoveStuns"	"1"
+			}
+
+			"FireSound"
+			{
+				"EffectName"	"DOTA_Item.BlackKingBar.Activate"
+				"Target"
+				{
+					"Center"  	"CASTER"
+					"Teams" 	"DOTA_UNIT_TARGET_TEAM_ALLIES"
+					"Types" 	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+					"Flags"     "DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+				}
+			}
+
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_item_titanium_bar_active"
+				"Target"
+				{
+					"Center"  	"CASTER"
+					"Teams" 	"DOTA_UNIT_TARGET_TEAM_ALLIES"
+					"Types" 	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+					"Flags"     "DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+				}
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_titanium_bar"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_strength"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_agility"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_intellect"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+				}
+			}
+			"modifier_item_titanium_bar_active"
+			{
+				"Duration"              	"%duration"
+				"EffectName"            	"particles/arena/items_fx/titanium_bar.vpcf"
+				"EffectAttachType"      	"follow_origin"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%active_bonus_strength"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%active_bonus_attackspeed"
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"%active_damage_reduction_pct"
+					"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_MAGICAL"	"1"
+				}
+
+				"States"
+				{
+					"MODIFIER_STATE_MAGIC_IMMUNE"					"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+	}
+}

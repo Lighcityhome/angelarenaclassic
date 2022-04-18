@@ -1,7 +1,7 @@
 _G.ADDON_FOLDER = debug.getinfo(1,"S").source:sub(2,-37)
 _G.PUBLISH_DATA = LoadKeyValues(ADDON_FOLDER:sub(5,-16).."publish_data.txt") or {}
 _G.WORKSHOP_TITLE = PUBLISH_DATA.title or "Dota 2 but..."-- LoadKeyValues(debug.getinfo(1,"S").source:sub(7,-53).."publish_data.txt").title 
-_G.MAX_LEVEL = 30
+_G.MAX_LEVEL = 100
 
 _G.GameMode = _G.GameMode or class({})
 
@@ -13,6 +13,7 @@ require("internal/utils/butt_api")
 require("internal/utils/custom_gameevents")
 require("internal/utils/particles")
 require("internal/utils/timers")
+require("item_drop")
 -- require("internal/utils/notifications") -- will test it tomorrow 
 
 require("internal/events")
@@ -26,9 +27,43 @@ require("internal/xp_modifier")
 softRequire("events")
 softRequire("filters")
 softRequire("settings_butt")
-softRequire("settings_misc")
-softRequire("startitems")
 softRequire("thinker")
+
+--duel
+require("duel/duel")
+require("duel/position_check")
+require("duel/teleport")
+
+-- AABS
+require('util/init')
+require("libraries/keyvalues")
+require("libraries/projectiles")
+require("libraries/notifications")
+require("libraries/animations")
+require("libraries/attachments")
+require("libraries/playertables")
+require("libraries/containers")
+require("libraries/worldpanels")
+require("libraries/statcollection/init")
+    --------------------------------------------------
+require("data/constants")
+require("data/globals")
+require("data/kv_data")
+require("data/modifiers")
+require("data/abilities")
+require("data/ability_functions")
+    --------------------------------------------------
+require("modules/index")
+
+softRequire("events")
+softRequire("custom_events")
+softRequire("filters")
+
+--AABS
+
+function GameMode:OnGameInProgress() -- Функция начнет выполняться, когда начнется матч( на часах будет 00:00 ).
+    Say(Returns:void Have Entity say ''string'', and teamOnly or not) -- Выводим в чат сообщение 'Wave №', в конце к которому добавится значение GAME_ROUND.
+end
 
 function Precache( context )
 	FireGameEvent("addon_game_mode_precache",nil)

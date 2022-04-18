@@ -1,0 +1,1798 @@
+""
+{
+	"item_recipe_dagon_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"1250"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_dagon_arena"
+		"ItemRequirements"
+		{
+			"01"						"item_staff_of_wizardry;item_null_talisman"
+		}
+	}
+
+	"item_recipe_dagon_2_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_dagon_2_arena"
+		"ItemRequirements"
+		{
+			"01"						"item_dagon_arena;item_recipe_dagon_arena"
+		}
+	}
+
+	"item_recipe_dagon_3_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_dagon_3_arena"
+		"ItemRequirements"
+		{
+			"01"						"item_dagon_2_arena;item_recipe_dagon_arena"
+		}
+	}
+
+	"item_recipe_dagon_4_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_dagon_4_arena"
+		"ItemRequirements"
+		{
+			"01"						"item_dagon_3_arena;item_recipe_dagon_arena"
+		}
+	}
+
+	"item_recipe_dagon_5_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_dagon_5_arena"
+		"ItemRequirements"
+		{
+			"01"						"item_dagon_4_arena;item_recipe_dagon_arena"
+		}
+	}
+
+	"item_recipe_enchanted_dagon_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"2250"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_enchanted_dagon_arena"
+		"ItemRequirements"
+		{
+			"01"						"item_dagon_5_arena"
+		}
+	}
+
+	"item_recipe_enchanted_dagon_2_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_enchanted_dagon_2_arena"
+		"ItemRequirements"
+		{
+			"01"						"item_enchanted_dagon_arena;item_recipe_enchanted_dagon_arena"
+		}
+	}
+
+	"item_recipe_enchanted_dagon_3_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_enchanted_dagon_3_arena"
+		"ItemRequirements"
+		{
+			"01"						"item_enchanted_dagon_2_arena;item_recipe_enchanted_dagon_arena"
+		}
+	}
+
+	"item_recipe_enchanted_dagon_4_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_enchanted_dagon_4_arena"
+		"ItemRequirements"
+		{
+			"01"						"item_enchanted_dagon_3_arena;item_recipe_enchanted_dagon_arena"
+		}
+	}
+
+	"item_recipe_enchanted_dagon_5_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_enchanted_dagon_5_arena"
+		"ItemRequirements"
+		{
+			"01"						"item_enchanted_dagon_4_arena;item_recipe_enchanted_dagon_arena"
+		}
+	}
+
+	"item_recipe_sunray_dagon_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"3000"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_sunray_dagon_arena"
+		"ItemRequirements"
+		{
+			"01"						"item_enchanted_dagon_5_arena;item_fallen_star"
+		}
+	}
+
+	"item_recipe_sunray_dagon_2_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_sunray_dagon_2_arena"
+		"ItemRequirements"
+		{
+			"01"						"item_sunray_dagon_arena;item_recipe_sunray_dagon_arena"
+		}
+	}
+
+	"item_recipe_sunray_dagon_3_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_sunray_dagon_3_arena"
+		"ItemRequirements"
+		{
+			"01"						"item_sunray_dagon_2_arena;item_recipe_sunray_dagon_arena"
+		}
+	}
+
+	"item_recipe_sunray_dagon_4_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_sunray_dagon_4_arena"
+		"ItemRequirements"
+		{
+			"01"						"item_sunray_dagon_3_arena;item_recipe_sunray_dagon_arena"
+		}
+	}
+
+	"item_recipe_sunray_dagon_5_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_sunray_dagon_5_arena"
+		"ItemRequirements"
+		{
+			"01"						"item_sunray_dagon_4_arena;item_recipe_sunray_dagon_arena"
+		}
+	}
+
+	"item_dagon_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityTextureName"			"item_arena/dagon_arena"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_ENERGY"
+
+		"AbilityCastRange"				"600 650 700 750 800"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"35.0 30.0 25.0 20.0 15.0"
+		"AbilityManaCost"				"180"
+
+		"AbilitySharedCooldown"			"dagon"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"1"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"dagon 1"
+
+		"UpgradesItems"					"item_dagon_arena;item_dagon_2_arena;item_dagon_3_arena;item_dagon_4_arena"
+		"UpgradeRecipe"					"item_recipe_dagon_arena"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"13 16 19 22 25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"9"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"400 500 600 700 800"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range_tooltip"			"600 650 700 750 800"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"items/items_dagon.lua"
+				"Function"			"Dagon"
+				"Damage"			"%damage"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_dagon_arena"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_intellect"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+				}
+			}
+		}
+	}
+
+	"item_dagon_2_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityTextureName"			"item_arena/dagon_2_arena"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_ENERGY"
+
+		"AbilityCastRange"				"600 650 700 750 800"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"35.0 30.0 25.0 20.0 15.0"
+		"AbilityManaCost"				"180"
+
+		"AbilitySharedCooldown"			"dagon"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"2"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"dagon 2"
+
+		"UpgradesItems"					"item_dagon_2_arena;item_dagon_3_arena;item_dagon_4_arena"
+		"UpgradeRecipe"					"item_recipe_dagon_arena"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"13 16 19 22 25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"9"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"400 500 600 700 800"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range_tooltip"			"600 650 700 750 800"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"items/items_dagon.lua"
+				"Function"			"Dagon"
+				"Damage"			"%damage"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_dagon_2_arena"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_intellect"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+				}
+			}
+		}
+	}
+
+	"item_dagon_3_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityTextureName"			"item_arena/dagon_3_arena"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_ENERGY"
+
+		"AbilityCastRange"				"600 650 700 750 800"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"35.0 30.0 25.0 20.0 15.0"
+		"AbilityManaCost"				"180"
+
+		"AbilitySharedCooldown"			"dagon"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"3"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"dagon 3"
+
+		"UpgradesItems"					"item_dagon_3_arena;item_dagon_4_arena"
+		"UpgradeRecipe"					"item_recipe_dagon_arena"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"13 16 19 22 25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"9"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"400 500 600 700 800"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range_tooltip"			"600 650 700 750 800"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"items/items_dagon.lua"
+				"Function"			"Dagon"
+				"Damage"			"%damage"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_dagon_3_arena"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_intellect"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+				}
+			}
+		}
+	}
+
+	"item_dagon_4_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityTextureName"			"item_arena/dagon_4_arena"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_ENERGY"
+
+		"AbilityCastRange"				"600 650 700 750 800"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"35.0 30.0 25.0 20.0 15.0"
+		"AbilityManaCost"				"180"
+
+		"AbilitySharedCooldown"			"dagon"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"4"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"dagon 4"
+
+		"UpgradesItems"					"item_dagon_4_arena"
+		"UpgradeRecipe"					"item_recipe_dagon_arena"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"13 16 19 22 25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"9"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"400 500 600 700 800"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range_tooltip"			"600 650 700 750 800"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"items/items_dagon.lua"
+				"Function"			"Dagon"
+				"Damage"			"%damage"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_dagon_4_arena"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_intellect"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+				}
+			}
+		}
+	}
+
+	"item_dagon_5_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityTextureName"			"item_arena/dagon_5_arena"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_ENERGY"
+
+		"AbilityCastRange"				"600 650 700 750 800"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"35.0 30.0 25.0 20.0 15.0"
+		"AbilityManaCost"				"180"
+
+		"AbilitySharedCooldown"			"dagon"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"5"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"dagon 5"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"13 16 19 22 25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"9"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"400 500 600 700 800"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range_tooltip"			"600 650 700 750 800"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"items/items_dagon.lua"
+				"Function"			"Dagon"
+				"Damage"			"%damage"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_dagon_5_arena"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_intellect"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+				}
+			}
+		}
+	}
+
+	"item_enchanted_dagon_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityTextureName"			"item_arena/enchanted_dagon_arena"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_DARK"
+
+		"AbilityCastRange"				"810 820 830 840 850"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"14.5 14.0 13.5 13.0 12.0"
+		"AbilityManaCost"				"200 220 240 260 280"
+
+		"AbilitySharedCooldown"			"dagon"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"1"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"enchanted dagon"
+
+		"UpgradesItems"					"item_enchanted_dagon_arena;item_enchanted_dagon_2_arena;item_enchanted_dagon_3_arena;item_enchanted_dagon_4_arena"
+		"UpgradeRecipe"					"item_recipe_enchanted_dagon_arena"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"28 31 34 37 40"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"9"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"850 900 950 1000 1050"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"magic_resist_reduction_pct"	"-4 -8 -12 -16 -20"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"debuff_duration"		"0.5 0.6 0.7 0.8 0.9"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range_tooltip"			"810 820 830 840 850"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"items/items_dagon.lua"
+				"Function"			"BetterDagon"
+				"Damage"			"%damage"
+				"modifier"			"modifier_item_enchanted_dagon_arena_debuff"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_enchanted_dagon_arena"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_intellect"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+				}
+			}
+
+			"modifier_item_enchanted_dagon_arena_debuff"
+			{
+				"IsDebuff"			"1"
+				"Duration"			"%debuff_duration"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%magic_resist_reduction_pct"
+				}
+			}
+		}
+	}
+
+	"item_enchanted_dagon_2_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityTextureName"			"item_arena/enchanted_dagon_2_arena"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_DARK"
+
+		"AbilityCastRange"				"810 820 830 840 850"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"14.5 14.0 13.5 13.0 12.0"
+		"AbilityManaCost"				"200 220 240 260 280"
+
+		"AbilitySharedCooldown"			"dagon"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"2"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"enchanted dagon 2"
+
+		"UpgradesItems"					"item_enchanted_dagon_2_arena;item_enchanted_dagon_3_arena;item_enchanted_dagon_4_arena"
+		"UpgradeRecipe"					"item_recipe_enchanted_dagon_arena"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"28 31 34 37 40"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"9"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"850 900 950 1000 1050"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"magic_resist_reduction_pct"	"-4 -8 -12 -16 -20"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"debuff_duration"		"0.5 0.6 0.7 0.8 0.9"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range_tooltip"			"810 820 830 840 850"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"items/items_dagon.lua"
+				"Function"			"BetterDagon"
+				"Damage"			"%damage"
+				"modifier"			"modifier_item_enchanted_dagon_arena_debuff"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_enchanted_dagon_2_arena"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_intellect"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+				}
+			}
+
+			"modifier_item_enchanted_dagon_arena_debuff"
+			{
+				"IsDebuff"			"1"
+				"Duration"			"%debuff_duration"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%magic_resist_reduction_pct"
+				}
+			}
+		}
+	}
+
+	"item_enchanted_dagon_3_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityTextureName"			"item_arena/enchanted_dagon_3_arena"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_DARK"
+
+		"AbilityCastRange"				"810 820 830 840 850"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"14.5 14.0 13.5 13.0 12.0"
+		"AbilityManaCost"				"200 220 240 260 280"
+
+		"AbilitySharedCooldown"			"dagon"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"3"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"enchanted dagon 3"
+
+		"UpgradesItems"					"item_enchanted_dagon_3_arena;item_enchanted_dagon_4_arena"
+		"UpgradeRecipe"					"item_recipe_enchanted_dagon_arena"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"28 31 34 37 40"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"9"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"850 900 950 1000 1050"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"magic_resist_reduction_pct"	"-4 -8 -12 -16 -20"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"debuff_duration"		"0.5 0.6 0.7 0.8 0.9"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range_tooltip"			"810 820 830 840 850"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"items/items_dagon.lua"
+				"Function"			"BetterDagon"
+				"Damage"			"%damage"
+				"modifier"			"modifier_item_enchanted_dagon_arena_debuff"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_enchanted_dagon_3_arena"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_intellect"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+				}
+			}
+
+			"modifier_item_enchanted_dagon_arena_debuff"
+			{
+				"IsDebuff"			"1"
+				"Duration"			"%debuff_duration"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%magic_resist_reduction_pct"
+				}
+			}
+		}
+	}
+
+	"item_enchanted_dagon_4_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityTextureName"			"item_arena/enchanted_dagon_4_arena"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_DARK"
+
+		"AbilityCastRange"				"810 820 830 840 850"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"14.5 14.0 13.5 13.0 12.0"
+		"AbilityManaCost"				"200 220 240 260 280"
+
+		"AbilitySharedCooldown"			"dagon"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"4"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"enchanted dagon 4"
+
+		"UpgradesItems"					"item_enchanted_dagon_4_arena"
+		"UpgradeRecipe"					"item_recipe_enchanted_dagon_arena"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"28 31 34 37 40"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"9"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"850 900 950 1000 1050"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"magic_resist_reduction_pct"	"-4 -8 -12 -16 -20"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"debuff_duration"		"0.5 0.6 0.7 0.8 0.9"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range_tooltip"			"810 820 830 840 850"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"items/items_dagon.lua"
+				"Function"			"BetterDagon"
+				"Damage"			"%damage"
+				"modifier"			"modifier_item_enchanted_dagon_arena_debuff"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_enchanted_dagon_4_arena"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_intellect"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+				}
+			}
+
+			"modifier_item_enchanted_dagon_arena_debuff"
+			{
+				"IsDebuff"			"1"
+				"Duration"			"%debuff_duration"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%magic_resist_reduction_pct"
+				}
+			}
+		}
+	}
+
+	"item_enchanted_dagon_5_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityTextureName"			"item_arena/enchanted_dagon_5_arena"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_DARK"
+
+		"AbilityCastRange"				"810 820 830 840 850"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"14.5 14.0 13.5 13.0 12.0"
+		"AbilityManaCost"				"200 220 240 260 280"
+
+		"AbilitySharedCooldown"			"dagon"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"5"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"enchanted dagon 5"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"28 31 34 37 40"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"9"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"850 900 950 1000 1050"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"magic_resist_reduction_pct"	"-4 -8 -12 -16 -20"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"debuff_duration"		"0.5 0.6 0.7 0.8 0.9"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range_tooltip"			"810 820 830 840 850"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"items/items_dagon.lua"
+				"Function"			"BetterDagon"
+				"Damage"			"%damage"
+				"modifier"			"modifier_item_enchanted_dagon_arena_debuff"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_enchanted_dagon_5_arena"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_intellect"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+				}
+			}
+
+			"modifier_item_enchanted_dagon_arena_debuff"
+			{
+				"IsDebuff"			"1"
+				"Duration"			"%debuff_duration"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%magic_resist_reduction_pct"
+				}
+			}
+		}
+	}
+
+	"item_sunray_dagon_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityTextureName"			"item_arena/sunray_dagon_arena"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_LIGHT"
+
+		"AbilityCastRange"				"860 870 880 890 900"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"12.0 11.5 11.0 10.5 10.0"
+		"AbilityManaCost"				"300 350 400 450 500"
+
+		"AbilitySharedCooldown"			"dagon"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"1"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"sunray dagon"
+
+		"UpgradesItems"					"item_sunray_dagon_arena;item_sunray_dagon_2_arena;item_sunray_dagon_3_arena;item_sunray_dagon_4_arena"
+		"UpgradeRecipe"					"item_recipe_sunray_dagon_arena"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"93 96 99 102 105"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"9"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spell_amp_pct"			"25"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"1100 1150 1200 1250 1300"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_percent"		"0.5"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"magic_resist_reduction_pct"	"-20"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"debuff_duration"		"0.6 1.0 1.4 1.8 2.2"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range_tooltip"			"860 870 880 890 900"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"items/items_dagon.lua"
+				"Function"			"SunrayDagon"
+				"Damage"			"%damage"
+				"DamagePct"			"%damage_percent"
+				"modifier"			"modifier_item_sunray_dagon_arena_debuff"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_sunray_dagon_arena"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_intellect"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+					"MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE"	"%spell_amp_pct"
+				}
+			}
+
+			"modifier_item_sunray_dagon_arena_debuff"
+			{
+				"IsDebuff"			"1"
+				"Duration"			"%debuff_duration"
+
+				"EffectName"		"particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_blinding_light_debuff.vpcf"
+				"EffectAttachType"	"follow_origin"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MISS_PERCENTAGE" 	"100"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%magic_resist_reduction_pct"
+				}
+
+				"States"
+				{
+					"MODIFIER_STATE_BLIND"		"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+	}
+
+	"item_sunray_dagon_2_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityTextureName"			"item_arena/sunray_dagon_2_arena"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_LIGHT"
+
+		"AbilityCastRange"				"860 870 880 890 900"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"12.0 11.5 11.0 10.5 10.0"
+		"AbilityManaCost"				"300 350 400 450 500"
+
+		"AbilitySharedCooldown"			"dagon"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"2"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"sunray dagon 2"
+
+		"UpgradesItems"					"item_sunray_dagon_2_arena;item_sunray_dagon_3_arena;item_sunray_dagon_4_arena"
+		"UpgradeRecipe"					"item_recipe_sunray_dagon_arena"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"93 96 99 102 105"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"9"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spell_amp_pct"			"25"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"1100 1150 1200 1250 1300"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_percent"		"0.5"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"magic_resist_reduction_pct"	"-20"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"debuff_duration"		"0.6 1.0 1.4 1.8 2.2"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range_tooltip"			"860 870 880 890 900"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"items/items_dagon.lua"
+				"Function"			"SunrayDagon"
+				"Damage"			"%damage"
+				"DamagePct"			"%damage_percent"
+				"modifier"			"modifier_item_sunray_dagon_arena_debuff"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_sunray_dagon_2_arena"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_intellect"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+					"MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE"	"%spell_amp_pct"
+				}
+			}
+
+			"modifier_item_sunray_dagon_arena_debuff"
+			{
+				"IsDebuff"			"1"
+				"Duration"			"%debuff_duration"
+
+				"EffectName"		"particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_blinding_light_debuff.vpcf"
+				"EffectAttachType"	"follow_origin"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MISS_PERCENTAGE" 	"100"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%magic_resist_reduction_pct"
+				}
+
+				"States"
+				{
+					"MODIFIER_STATE_BLIND"		"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+	}
+
+	"item_sunray_dagon_3_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityTextureName"			"item_arena/sunray_dagon_3_arena"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_LIGHT"
+
+		"AbilityCastRange"				"860 870 880 890 900"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"12.0 11.5 11.0 10.5 10.0"
+		"AbilityManaCost"				"300 350 400 450 500"
+
+		"AbilitySharedCooldown"			"dagon"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"3"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"sunray dagon 3"
+
+		"UpgradesItems"					"item_sunray_dagon_3_arena;item_sunray_dagon_4_arena"
+		"UpgradeRecipe"					"item_recipe_sunray_dagon_arena"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"93 96 99 102 105"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"9"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spell_amp_pct"			"25"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"1100 1150 1200 1250 1300"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_percent"		"0.5"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"magic_resist_reduction_pct"	"-20"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"debuff_duration"		"0.6 1.0 1.4 1.8 2.2"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range_tooltip"			"860 870 880 890 900"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"items/items_dagon.lua"
+				"Function"			"SunrayDagon"
+				"Damage"			"%damage"
+				"DamagePct"			"%damage_percent"
+				"modifier"			"modifier_item_sunray_dagon_arena_debuff"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_sunray_dagon_3_arena"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_intellect"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+					"MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE"	"%spell_amp_pct"
+				}
+			}
+
+			"modifier_item_sunray_dagon_arena_debuff"
+			{
+				"IsDebuff"			"1"
+				"Duration"			"%debuff_duration"
+
+				"EffectName"		"particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_blinding_light_debuff.vpcf"
+				"EffectAttachType"	"follow_origin"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MISS_PERCENTAGE" 	"100"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%magic_resist_reduction_pct"
+				}
+
+				"States"
+				{
+					"MODIFIER_STATE_BLIND"		"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+	}
+
+	"item_sunray_dagon_4_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityTextureName"			"item_arena/sunray_dagon_4_arena"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_LIGHT"
+
+		"AbilityCastRange"				"860 870 880 890 900"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"12.0 11.5 11.0 10.5 10.0"
+		"AbilityManaCost"				"300 350 400 450 500"
+
+		"AbilitySharedCooldown"			"dagon"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"4"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"sunray dagon 4"
+
+		"UpgradesItems"					"item_sunray_dagon_4_arena"
+		"UpgradeRecipe"					"item_recipe_sunray_dagon_arena"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"93 96 99 102 105"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"9"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spell_amp_pct"			"25"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"1100 1150 1200 1250 1300"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_percent"		"0.5"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"magic_resist_reduction_pct"	"-20"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"debuff_duration"		"0.6 1.0 1.4 1.8 2.2"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range_tooltip"			"860 870 880 890 900"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"items/items_dagon.lua"
+				"Function"			"SunrayDagon"
+				"Damage"			"%damage"
+				"DamagePct"			"%damage_percent"
+				"modifier"			"modifier_item_sunray_dagon_arena_debuff"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_sunray_dagon_4_arena"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_intellect"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+					"MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE"	"%spell_amp_pct"
+				}
+			}
+
+			"modifier_item_sunray_dagon_arena_debuff"
+			{
+				"IsDebuff"			"1"
+				"Duration"			"%debuff_duration"
+
+				"EffectName"		"particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_blinding_light_debuff.vpcf"
+				"EffectAttachType"	"follow_origin"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MISS_PERCENTAGE" 	"100"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%magic_resist_reduction_pct"
+				}
+
+				"States"
+				{
+					"MODIFIER_STATE_BLIND"		"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+	}
+
+	"item_sunray_dagon_5_arena"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityTextureName"			"item_arena/sunray_dagon_5_arena"
+		"AbilityUnitDamageSubType"		"DAMAGE_SUBTYPE_LIGHT"
+
+		"AbilityCastRange"				"860 870 880 890 900"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"12.0 11.5 11.0 10.5 10.0"
+		"AbilityManaCost"				"300 350 400 450 500"
+
+		"AbilitySharedCooldown"			"dagon"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"5"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"sunray dagon 5"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"93 96 99 102 105"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"9"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spell_amp_pct"			"25"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"1100 1150 1200 1250 1300"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_percent"		"0.5"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"magic_resist_reduction_pct"	"-20"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"debuff_duration"		"0.6 1.0 1.4 1.8 2.2"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range_tooltip"			"860 870 880 890 900"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"items/items_dagon.lua"
+				"Function"			"SunrayDagon"
+				"Damage"			"%damage"
+				"DamagePct"			"%damage_percent"
+				"modifier"			"modifier_item_sunray_dagon_arena_debuff"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_sunray_dagon_5_arena"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_intellect"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+					"MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE"	"%spell_amp_pct"
+				}
+			}
+
+			"modifier_item_sunray_dagon_arena_debuff"
+			{
+				"IsDebuff"			"1"
+				"Duration"			"%debuff_duration"
+
+				"EffectName"		"particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_blinding_light_debuff.vpcf"
+				"EffectAttachType"	"follow_origin"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MISS_PERCENTAGE" 	"100"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%magic_resist_reduction_pct"
+				}
+
+				"States"
+				{
+					"MODIFIER_STATE_BLIND"		"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+	}
+}

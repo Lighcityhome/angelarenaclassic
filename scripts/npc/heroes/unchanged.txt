@@ -1,0 +1,1148 @@
+"DOTAHeroes"
+{
+	"npc_dota_hero_arena_base"
+	{
+		"BaseClass"					"npc_dota_hero"
+		"Model"						"models/creeps/lane_creeps/creep_radiant_melee/radiant_melee.vmdl"
+		"Enabled"					"1"
+		"BotImplemented"			"0"
+		"NewHero"					"1"
+		"HeroID"					"255"
+
+		"Team"						"Bad"
+		"ModelScale"				"1"
+		"NoCombine"					"1"
+		"Legs"						"2"
+
+		"AbilityLayout"				"4"
+		"Ability1"					""
+
+		"ArmorPhysical"				"-1"
+		"MagicalResistance"			"25"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"1"
+		"AttackDamageMax"			"1"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.35"
+		"AttackAcquisitionRange"	"600" // MELEE: 600, RANGED: 800
+		"AttackRange"				"150"
+		"ProjectileModel"			"particles/base_attacks/ranged_hero.vpcf"
+		"ProjectileSpeed"			"900"
+
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"0"
+		"AttributeStrengthGain"		"0"
+		"AttributeBaseIntelligence"	"0"
+		"AttributeIntelligenceGain"	"0"
+		"AttributeBaseAgility"		"0"
+		"AttributeAgilityGain"		"0"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"70"
+		"HealthBarOffset"			"-1"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"300"
+		"MovementTurnRate"			"0.5"
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"1.5"
+		"StatusMana"				"75"
+		"StatusManaRegen"			"0.9"
+
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+		"VisionDaytimeRange"		"1800"
+		"VisionNighttimeRange"		"800"
+
+		"HasInventory"				"1"
+
+		//"VoiceBackgroundSound"		""
+		"GameSoundsFile"			""
+		"VoiceFile"					""
+		"SoundSet"					"" // Hero_Name
+		"IdleSoundLoop"				"" // Hero_Name.IdleLoop
+		"HeroSelectSoundEffect"		"" // Hero_Name.Pick
+	}
+
+	"npc_dota_hero_axe"
+	{
+		"override_hero"	"npc_dota_hero_axe"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_bane"
+	{
+		"override_hero"	"npc_dota_hero_bane"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"0"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_beastmaster"
+	{
+		"override_hero"	"npc_dota_hero_beastmaster"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_FIRE" 	"0"
+			"DAMAGE_SUBTYPE_ENERGY" 	"50"
+		}
+	}
+
+	"npc_dota_hero_bloodseeker"
+	{
+		"override_hero"	"npc_dota_hero_bloodseeker"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_drow_ranger"
+	{
+		"override_hero"	"npc_dota_hero_drow_ranger"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_earthshaker"
+	{
+		"override_hero"	"npc_dota_hero_earthshaker"
+		"AttackRate"	"1.7"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_ENERGY" 	"50"
+			"DAMAGE_SUBTYPE_WATER" 		"0"
+		}
+	}
+
+	"npc_dota_hero_juggernaut"
+	{
+		"override_hero"	"npc_dota_hero_juggernaut"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_mirana"
+	{
+		"override_hero"	"npc_dota_hero_mirana"
+		"AttackRate"	"1.5"
+	}
+
+	"npc_dota_hero_nevermore"
+	{
+		"override_hero"	"npc_dota_hero_nevermore"
+		"AttackRate"	"1.6"
+		"ArmorPhysical"	"4"
+		"AttributeStrengthGain"	"2.5"
+		"AttributeAgilityGain"	"2.8"
+		"MovementSpeed"	"300"
+		"AttributeIntelligenceGain"	"2.0"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"0"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_morphling"
+	{
+		"override_hero"	"npc_dota_hero_morphling"
+		"ArmorPhysical"	"4"
+		"AttackRate"	"1.4"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_FIRE" 	"100"
+			"DAMAGE_SUBTYPE_ICE" 	"-75"
+		}
+	}
+
+	"npc_dota_hero_puck"
+	{
+		"override_hero"	"npc_dota_hero_puck"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_razor"
+	{
+		"override_hero"	"npc_dota_hero_razor"
+		"AttackRate"	"1.7"
+		"ArmorPhysical"	"2"
+		"AttributeStrengthGain"	"2.6"
+		"AttributeAgilityGain"	"2.8"
+		"MovementSpeed"	"305"
+		"AttributeIntelligenceGain"	"2.0"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_EARTH" 	"50"
+			"DAMAGE_SUBTYPE_WATER" 	"0"
+		}
+	}
+
+	"npc_dota_hero_riki"
+	{
+		"override_hero"	"npc_dota_hero_riki"
+		"AttackRate"	"1.7"
+	}
+
+	"npc_dota_hero_rubick"
+	{
+		"override_hero"	"npc_dota_hero_rubick"
+		"AttackRate"	"1.5"
+	}
+
+	"npc_dota_hero_sand_king"
+	{
+		"override_hero"	"npc_dota_hero_sand_king"
+		"AttackRate"	"1.7"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_ENERGY" 	"50"
+			"DAMAGE_SUBTYPE_WATER" 		"0"
+		}
+	}
+
+	"npc_dota_hero_storm_spirit"
+	{
+		"override_hero"	"npc_dota_hero_storm_spirit"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_EARTH" 	"50"
+			"DAMAGE_SUBTYPE_WATER" 	"0"
+		}
+	}
+
+	"npc_dota_hero_sven"
+	{
+		"override_hero"	"npc_dota_hero_sven"
+		"AttackRate"	"1.8"
+		"ArmorPhysical"	"4"
+		"AttributeStrengthGain"	"2.9"
+		"AttributeAgilityGain"	"2.1"
+		"MovementSpeed"	"300"
+		"AttributeIntelligenceGain"	"2.0"
+	}
+
+	"npc_dota_hero_tiny"
+	{
+		"override_hero"	"npc_dota_hero_tiny"
+		"AttackRate"	"1.8"
+		"ArmorPhysical"	"0"
+		"AttributeStrengthGain"	"2.8"
+		"AttributeAgilityGain"	"2.1"
+		"MovementSpeed"	"300"
+		"AttributeIntelligenceGain"	"1.8"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_ENERGY" "100"
+		}
+	}
+
+	"npc_dota_hero_vengefulspirit"
+	{
+		"override_hero"	"npc_dota_hero_vengefulspirit"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"0"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_windrunner"
+	{
+		"override_hero"	"npc_dota_hero_windrunner"
+		"AttackRate"	"1.4"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_AIR" 	"50"
+			"DAMAGE_SUBTYPE_ENERGY" "0"
+		}
+	}
+
+	"npc_dota_hero_zuus"
+	{
+		"override_hero"	"npc_dota_hero_zuus"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_EARTH" 	"50"
+			"DAMAGE_SUBTYPE_WATER" 	"0"
+		}
+	}
+
+	"npc_dota_hero_kunkka"
+	{
+		"override_hero"	"npc_dota_hero_kunkka"
+		"AttackRate"	"1.7"
+		"ArmorPhysical"	"4"
+		"AttributeStrengthGain"	"2.8"
+		"AttributeAgilityGain"	"2.1"
+		"MovementSpeed"	"300"
+		"AttributeIntelligenceGain"	"2.0"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_FIRE" 	"50"
+			"DAMAGE_SUBTYPE_ICE" 	"0"
+		}
+	}
+
+	"npc_dota_hero_lina"
+	{
+		"override_hero"	"npc_dota_hero_lina"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_ICE" 	"50"
+			"DAMAGE_SUBTYPE_WATER" 	"0"
+		}
+	}
+
+	"npc_dota_hero_lich"
+	{
+		"override_hero"	"npc_dota_hero_lich"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_WATER" 	"50"
+			"DAMAGE_SUBTYPE_FIRE" 	"0"
+		}
+	}
+
+	"npc_dota_hero_lion"
+	{
+		"override_hero"	"npc_dota_hero_lion"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"0"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_shadow_shaman"
+	{
+		"override_hero"	"npc_dota_hero_shadow_shaman"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_slardar"
+	{
+		"override_hero"	"npc_dota_hero_slardar"
+		"AttackRate"	"1.7"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_ICE" 	"0"
+			"DAMAGE_SUBTYPE_FIRE" 	"50"
+		}
+	}
+
+	"npc_dota_hero_tidehunter"
+	{
+		"override_hero"	"npc_dota_hero_tidehunter"
+		"AttackRate"	"2.0"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_ICE" 	"0"
+			"DAMAGE_SUBTYPE_FIRE" 	"50"
+		}
+	}
+
+	"npc_dota_hero_witch_doctor"
+	{
+		"override_hero"	"npc_dota_hero_witch_doctor"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"0"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_enigma"
+	{
+		"override_hero"	"npc_dota_hero_enigma"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"100"
+		}
+	}
+
+	"npc_dota_hero_sniper"
+	{
+		"override_hero"	"npc_dota_hero_sniper"
+		"AttackRate"	"1.6"
+		"MovementSpeed"	"275"
+
+		// FIXME: remove once Valve would fix it
+		"AttackDamageMax"		"21"
+	}
+
+	"npc_dota_hero_necrolyte"
+	{
+		"override_hero"	"npc_dota_hero_necrolyte"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_DARK" 	"0"
+			"DAMAGE_SUBTYPE_LIGHT" 	"50"
+		}
+	}
+
+	"npc_dota_hero_queenofpain"
+	{
+		"override_hero"	"npc_dota_hero_queenofpain"
+		"AttackRate"	"1.7"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"0"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_venomancer"
+	{
+		"override_hero"	"npc_dota_hero_venomancer"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_WATER" 	"0"
+			"DAMAGE_SUBTYPE_ENERGY" "50"
+		}
+	}
+
+	"npc_dota_hero_death_prophet"
+	{
+		"override_hero"	"npc_dota_hero_death_prophet"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"0"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_phantom_assassin"
+	{
+		"override_hero"	"npc_dota_hero_phantom_assassin"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_pugna"
+	{
+		"override_hero"	"npc_dota_hero_pugna"
+		"AttackRange"	"630"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"0"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_templar_assassin"
+	{
+		"override_hero"	"npc_dota_hero_templar_assassin"
+		"AttackRate"	"1.5"
+		"AttackRange"		"200"
+	}
+
+	"npc_dota_hero_viper"
+	{
+		"override_hero"	"npc_dota_hero_viper"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_WATER" 	"0"
+			"DAMAGE_SUBTYPE_ENERGY" "50"
+		}
+	}
+
+	"npc_dota_hero_luna"
+	{
+		"override_hero"	"npc_dota_hero_luna"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_dazzle"
+	{
+		"override_hero"	"npc_dota_hero_dazzle"
+		"AttackRate"	"1.5"
+	}
+
+	"npc_dota_hero_rattletrap"
+	{
+		"override_hero"	"npc_dota_hero_rattletrap"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_leshrac"
+	{
+		"override_hero"	"npc_dota_hero_leshrac"
+		"AttackRate"	"1.7"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_ENERGY" "100"
+		}
+	}
+
+	"npc_dota_hero_furion"
+	{
+		"override_hero"	"npc_dota_hero_furion"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_FIRE" 		"0"
+			"DAMAGE_SUBTYPE_WARTER" 	"50"
+		}
+	}
+
+	"npc_dota_hero_dark_seer"
+	{
+		"override_hero"	"npc_dota_hero_dark_seer"
+		"AttackRate"	"1.7"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"0"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_clinkz"
+	{
+		"override_hero"	"npc_dota_hero_clinkz"
+		"AttackRate"	"1.4"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_WATER" 	"0"
+			"DAMAGE_SUBTYPE_ICE" 	"50"
+		}
+	}
+
+	"npc_dota_hero_enchantress"
+	{
+		"override_hero"	"npc_dota_hero_enchantress"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_FIRE" 	"0"
+			"DAMAGE_SUBTYPE_WATER" 	"50"
+		}
+	}
+
+	"npc_dota_hero_night_stalker"
+	{
+		"override_hero"	"npc_dota_hero_night_stalker"
+		"AttackRate"	"1.7"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"-75"
+			"DAMAGE_SUBTYPE_DARKNESS" "100"
+		}
+	}
+
+	"npc_dota_hero_broodmother"
+	{
+		"override_hero"	"npc_dota_hero_broodmother"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_bounty_hunter"
+	{
+		"override_hero"	"npc_dota_hero_bounty_hunter"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_weaver"
+	{
+		"override_hero"	"npc_dota_hero_weaver"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_ENERGY" 	"100"
+		}
+	}
+
+	"npc_dota_hero_jakiro"
+	{
+		"override_hero"	"npc_dota_hero_jakiro"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_ICE" 	"50"
+			"DAMAGE_SUBTYPE_FIRE" 	"50"
+		}
+	}
+
+	"npc_dota_hero_batrider"
+	{
+		"override_hero"	"npc_dota_hero_batrider"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_WATER" 	"0"
+			"DAMAGE_SUBTYPE_FIRE" 	"50"
+		}
+	}
+
+	"npc_dota_hero_chen"
+	{
+		"override_hero"	"npc_dota_hero_chen"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_spectre"
+	{
+		"override_hero"	"npc_dota_hero_spectre"
+		"AttackRate"	"1.5"
+		"AttributeStrengthGain"	"1.8"
+		"AttributeAgilityGain"	"1.5"
+		"AttributeIntelligenceGain"	"1.7"
+	}
+
+	"npc_dota_hero_ancient_apparition"
+	{
+		"override_hero"	"npc_dota_hero_ancient_apparition"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_WATER" 	"100"
+			"DAMAGE_SUBTYPE_FIRE" 	"-75"
+		}
+
+	}
+
+	"npc_dota_hero_ursa"
+	{
+		"override_hero"	"npc_dota_hero_ursa"
+		"AttackRate"	"1.7"
+	}
+
+	"npc_dota_hero_spirit_breaker"
+	{
+		"override_hero"	"npc_dota_hero_spirit_breaker"
+		"AttackRate"	"1.7"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"0"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_alchemist"
+	{
+		"override_hero"	"npc_dota_hero_alchemist"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_invoker"
+	{
+		"override_hero"	"npc_dota_hero_invoker"
+		"AttackRate"	"1.5"
+	}
+
+	"npc_dota_hero_silencer"
+	{
+		"override_hero"	"npc_dota_hero_silencer"
+		"AttackRate"	"1.5"
+		"ArmorPhysical"	"-5"
+		"AttributeBaseAgility"	"50"
+	}
+
+	"npc_dota_hero_obsidian_destroyer"
+	{
+		"override_hero"	"npc_dota_hero_obsidian_destroyer"
+		"AttackRate"	"1.6"
+		"ArmorPhysical"	"-5"
+		"AttributeBaseAgility"	"40"
+	}
+
+	"npc_dota_hero_lycan"
+	{
+		"override_hero"	"npc_dota_hero_lycan"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_brewmaster"
+	{
+		"override_hero"	"npc_dota_hero_brewmaster"
+		"AttackRate"	"1.5"
+		"AttributeStrengthGain"	"2.6"
+		"AttributeAgilityGain"	"1.8"
+		"AttributeIntelligenceGain"	"1.8"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT"	"20"
+			"DAMAGE_SUBTYPE_DARK"	"20"
+			"DAMAGE_SUBTYPE_EARTH"	"30"
+			"DAMAGE_SUBTYPE_ICE"	"20"
+			"DAMAGE_SUBTYPE_FIRE"	"30"
+			"DAMAGE_SUBTYPE_WATER"	"30"
+			"DAMAGE_SUBTYPE_ENERGY"	"30"
+		}
+	}
+
+	"npc_dota_hero_shadow_demon"
+	{
+		"override_hero"	"npc_dota_hero_shadow_demon"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"0"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_lone_druid"
+	{
+		"override_hero"	"npc_dota_hero_lone_druid"
+		"AttackRate"	"1.5"
+	}
+
+	"npc_dota_hero_chaos_knight"
+	{
+		"override_hero"	"npc_dota_hero_chaos_knight"
+		"AttackRate"	"1.7"
+		"ArmorPhysical"	"4"
+		"AttributeStrengthGain"	"2.8"
+		"AttributeAgilityGain"	"2.4"
+		"AttributeIntelligenceGain"	"1.9"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"0"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_meepo"
+	{
+		"override_hero"	"npc_dota_hero_meepo"
+		"AttackRate"	"2"
+		"AttributeStrengthGain"	"1.2"
+		"AttributeIntelligenceGain"	"1.5"
+		"AttributeAgilityGain"	"1.2"
+	}
+
+	"npc_dota_hero_treant"
+	{
+		"override_hero"	"npc_dota_hero_treant"
+		"AttackRate"	"1.5"
+		"MovementSpeed"	"270"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_FIRE" 	"0"
+			"DAMAGE_SUBTYPE_WATER" 	"50"
+		}
+	}
+
+	"npc_dota_hero_undying"
+	{
+		"override_hero"	"npc_dota_hero_undying"
+		"AttackRate"	"1.6"
+		"ArmorPhysical"	"4"
+		"AttributeStrengthGain"	"2.8"
+		"AttributeAgilityGain"	"2.1"
+		"MovementSpeed"	"300"
+		"AttributeIntelligenceGain"	"2.0"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"0"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_disruptor"
+	{
+		"override_hero"	"npc_dota_hero_disruptor"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_WATER" 	"0"
+			"DAMAGE_SUBTYPE_ENERGY" "50"
+		}
+	}
+
+	"npc_dota_hero_nyx_assassin"
+	{
+		"override_hero"	"npc_dota_hero_nyx_assassin"
+		"AttackRate"	"1.5"
+	}
+
+	"npc_dota_hero_naga_siren"
+	{
+		"override_hero"	"npc_dota_hero_naga_siren"
+		"AttackRate"	"1.5"
+		"ArmorPhysical"	"4"
+		"AttributeStrengthGain"	"2.5"
+		"AttributeAgilityGain"	"2.8"
+		"MovementSpeed"	"300"
+		"AttributeIntelligenceGain"	"2.0"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_ICE" 	"0"
+			"DAMAGE_SUBTYPE_FIRE" 	"50"
+		}
+	}
+
+	"npc_dota_hero_keeper_of_the_light"
+	{
+		"override_hero"	"npc_dota_hero_keeper_of_the_light"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_visage"
+	{
+		"override_hero"	"npc_dota_hero_visage"
+		"AttackRate"	"1.8"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"0"
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_slark"
+	{
+		"override_hero"	"npc_dota_hero_slark"
+		"AttackRate"	"1.3"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_ICE" 	"0"
+			"DAMAGE_SUBTYPE_FIRE" 	"50"
+		}
+	}
+
+	"npc_dota_hero_troll_warlord"
+	{
+		"override_hero"	"npc_dota_hero_troll_warlord"
+		"AttackRate"	"1.7"
+	}
+
+	"npc_dota_hero_centaur"
+	{
+		"override_hero"	"npc_dota_hero_centaur"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_magnataur"
+	{
+		"override_hero"	"npc_dota_hero_magnataur"
+		"AttackRate"	"1.7"
+	}
+
+	"npc_dota_hero_shredder"
+	{
+		"override_hero"	"npc_dota_hero_shredder"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_bristleback"
+	{
+		"override_hero"	"npc_dota_hero_bristleback"
+		"AttackRate"	"1.7"
+	}
+
+	"npc_dota_hero_tusk"
+	{
+		"override_hero"	"npc_dota_hero_tusk"
+		"AttackRate"	"1.7"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_FIRE" 	"0"
+			"DAMAGE_SUBTYPE_WATER" 	"50"
+		}
+	}
+
+	"npc_dota_hero_skywrath_mage"
+	{
+		"override_hero"	"npc_dota_hero_skywrath_mage"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_DARK" "50"
+		}
+	}
+
+	"npc_dota_hero_abaddon"
+	{
+		"override_hero"	"npc_dota_hero_abaddon"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" 	"50"
+		}
+	}
+
+	"npc_dota_hero_elder_titan"
+	{
+		"override_hero"	"npc_dota_hero_elder_titan"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_legion_commander"
+	{
+		"override_hero"	"npc_dota_hero_legion_commander"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_ember_spirit"
+	{
+		"override_hero"	"npc_dota_hero_ember_spirit"
+		"AttackRate"	"1.5"
+		"ArmorPhysical"	"4"
+		"AttributeStrengthGain"	"2.5"
+		"AttributeAgilityGain"	"3.0"
+		"MovementSpeed"	"300"
+		"AttributeIntelligenceGain"	"2.0"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_WATER" 	"0"
+			"DAMAGE_SUBTYPE_ICE" 	"50"
+		}
+	}
+
+	"npc_dota_hero_earth_spirit"
+	{
+		"override_hero"	"npc_dota_hero_earth_spirit"
+		"AttackRate"	"1.8"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_WATER" 	"0"
+			"DAMAGE_SUBTYPE_ENERGY" "50"
+		}
+	}
+
+	"npc_dota_hero_terrorblade"
+	{
+		"override_hero"	"npc_dota_hero_terrorblade"
+		"AttackRate"	"1.6"
+		"AttributeAgilityGain"	"3.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT" "50"
+		}
+	}
+
+	"npc_dota_hero_phoenix"
+	{
+		"override_hero"	"npc_dota_hero_phoenix"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_WATER" 	"-75"
+			"DAMAGE_SUBTYPE_ICE"	"100"
+		}
+	}
+
+	"npc_dota_hero_oracle"
+	{
+		"override_hero"	"npc_dota_hero_oracle"
+		"AttackRate"	"1.3"
+	}
+
+	"npc_dota_hero_techies"
+	{
+		"override_hero"	"npc_dota_hero_techies"
+		"AttackRate"	"1.4"
+	}
+
+	"npc_dota_hero_winter_wyvern"
+	{
+		"override_hero"	"npc_dota_hero_winter_wyvern"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_FIRE" 	"0"
+			"DAMAGE_SUBTYPE_WATER" 	"50"
+		}
+	}
+
+	"npc_dota_hero_arc_warden"
+	{
+		"override_hero"	"npc_dota_hero_arc_warden"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_WATER" 	"0"
+			"DAMAGE_SUBTYPE_ENERGY" "50"
+		}
+	}
+
+	"npc_dota_hero_abyssal_underlord"
+	{
+		"override_hero"	"npc_dota_hero_abyssal_underlord"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_DARK" 	"0"
+			"DAMAGE_SUBTYPE_LIGHT" 	"50"
+		}
+	}
+
+	"npc_dota_hero_monkey_king"
+	{
+		"override_hero"	"npc_dota_hero_monkey_king"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_pangolier"
+	{
+		"override_hero"	"npc_dota_hero_pangolier"
+		"AttackRate"	"1.3"
+	}
+
+	"npc_dota_hero_dark_willow"
+	{
+		"override_hero"	"npc_dota_hero_dark_willow"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_DARK" 	"0"
+			"DAMAGE_SUBTYPE_LIGHT" 	"50"
+		}
+	}
+
+	"npc_dota_hero_wisp"
+	{
+		"override_hero"	"npc_dota_hero_wisp"
+		"AttackRate"	"1.5"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_warlock"
+	{
+		"override_hero"	"npc_dota_hero_warlock"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_DARK" 	"0"
+			"DAMAGE_SUBTYPE_LIGHT" 	"50"
+		}
+	}
+
+	"npc_dota_hero_crystal_maiden"
+	{
+		"override_hero"	"npc_dota_hero_crystal_maiden"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_FIRE" 	"0"
+			"DAMAGE_SUBTYPE_WATER" 	"50"
+		}
+	}
+
+	"npc_dota_hero_faceless_void"
+	{
+		"override_hero"	"npc_dota_hero_faceless_void"
+		"AttackRate"	"1.7"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_LIGHT"	"30"
+			"DAMAGE_SUBTYPE_DARK"	"30"
+			"DAMAGE_SUBTYPE_EARTH"	"30"
+			"DAMAGE_SUBTYPE_ICE"	"30"
+			"DAMAGE_SUBTYPE_FIRE"	"30"
+			"DAMAGE_SUBTYPE_WATER"	"30"
+			"DAMAGE_SUBTYPE_ENERGY"	"30"
+		}
+	}
+
+	"npc_dota_hero_dragon_knight"
+	{
+		"override_hero"	"npc_dota_hero_dragon_knight"
+		"AttackRate"	"1.4"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_ENERGY" "30"
+			"DAMAGE_SUBTYPE_ICE" 	"30"
+			"DAMAGE_SUBTYPE_FIRE" 	"30"
+		}
+	}
+
+	"npc_dota_hero_antimage"
+	{
+		"override_hero"	"npc_dota_hero_antimage"
+		"AttackRate"	"1.4"
+		"AttributeBaseAgility"			"14"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_DARK" "50"
+		}
+	}
+
+	"npc_dota_hero_omniknight"
+	{
+		"override_hero"	"npc_dota_hero_omniknight"
+		"AttackRate"	"1.6"
+		"DamgeSubTypeResistance"
+		{
+			"DAMAGE_SUBTYPE_DARK" 	"50"
+		}
+	}
+
+	"npc_dota_hero_medusa"
+	{
+		"override_hero"	"npc_dota_hero_medusa"
+		"AttackRate"	"1.6"
+		"ArmorPhysical"	"2"
+		"AttributeBaseAgility"	"23"
+		"AttributeStrengthGain"	"3.0"
+		"AttributeAgilityGain"	"2.5"
+		"MovementSpeed"	"310"
+		"AttributeIntelligenceGain"	"2.1"
+	}
+
+	"npc_dota_hero_phantom_lancer"
+	{
+		"override_hero"	"npc_dota_hero_phantom_lancer"
+		"AttackRate"	"1.9"
+	}
+
+	"npc_dota_hero_grimstroke"
+	{
+		"override_hero"	"npc_dota_hero_grimstroke"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_skeleton_king"
+	{
+		"override_hero"	"npc_dota_hero_skeleton_king"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_mars"
+	{
+		"override_hero"	"npc_dota_hero_mars"
+		"AttackRate"	"1.6"
+	}
+
+	"npc_dota_hero_snapfire"
+	{
+		"override_hero"	"npc_dota_hero_snapfire"
+	}
+
+	"npc_dota_hero_void_spirit"
+	{
+		"override_hero"	"npc_dota_hero_void_spirit"
+	}
+}

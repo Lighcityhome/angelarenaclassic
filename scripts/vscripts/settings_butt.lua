@@ -21,8 +21,7 @@ BUTTINGS = {
 	MAGIC_RES_CAP = 0,                  -- 0 = normal, 1 = Keeps Magic Resistance <100%
 	CLASSIC_ARMOR = 0,                  -- 0 = normal, 1 = Old armor formula (pre 7.20)
 	                                    -- set this to 1, if your game mode will feature high amounts of armor or agility
-	                                    -- otherwise the physical resistance can go to 100% making things immune to physical damage
-	
+
 	NO_UPHILL_MISS = 0,                 -- 0 = normal, 1 = 0% uphill muss chance
 	OUTPOST_SHOP = 0,                   -- 0 = normal, 1 = jungle shops
 	SIDE_SHOP = 0,                      -- 0 = normal, 1 = bring back sideshops

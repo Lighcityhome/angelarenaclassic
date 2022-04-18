@@ -9,8 +9,7 @@ ListenToGameEvent("game_rules_state_change", function()
 		
 		GameRules:SetSameHeroSelectionEnabled( 1 == BUTTINGS.ALLOW_SAME_HERO_SELECTION )
 		GameRules:SetUseUniversalShopMode( 1 == BUTTINGS.UNIVERSAL_SHOP_MODE )
-		GameRules:SetGoldTickTime( 60/BUTTINGS.GOLD_PER_MINUTE )
-
+		
 		GameRules:GetGameModeEntity():SetCustomXPRequiredToReachNextLevel( BUTTINGS.ALTERNATIVE_XP_TABLE() )
 		GameRules:GetGameModeEntity():SetUseCustomHeroLevels(BUTTINGS.MAX_LEVEL~=25)
 		GameRules:SetUseCustomHeroXPValues(BUTTINGS.MAX_LEVEL~=25)
@@ -31,11 +30,6 @@ ListenToGameEvent("game_rules_state_change", function()
 			GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride( 16 )
 		end
 
-		if ( 1 == BUTTINGS.SIDE_SHOP ) then
-			for _,pos in pairs(Butt:OldSideshopLocations()) do
-				Butt:CreateSideShop(pos)
-			end
-		end
 		if ( 1 == BUTTINGS.OUTPOST_SHOP ) then
 			for o,outpost in pairs(Butt:AllOutposts()) do
 				Butt:CreateSideShop(outpost:GetAbsOrigin())

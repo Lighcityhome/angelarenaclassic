@@ -1,0 +1,161 @@
+""
+{
+	"item_recipe_nagascale_bow"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_nagascale_bow"
+		"ItemRequirements"
+		{
+			"01"						"item_ogre_axe;item_staff_of_wizardry;item_blade_of_alacrity;item_wraith_band;item_null_talisman;item_bracer"
+		}
+	}
+
+	"item_nagascale_bow"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/items_splitshots"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"item_arena/nagascale_bow"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"16"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all"				"22"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"split_damage_pct"		"30"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"split_radius"			"275"
+			}
+		}
+	}
+
+	"item_recipe_splitshot_ultimate"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"1405"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_splitshot_ultimate"
+		"ItemRequirements"
+		{
+			"01"						"item_nagascale_bow;item_sange_and_yasha_and_kaya"
+		}
+	}
+
+	"item_splitshot_ultimate"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/items_splitshots"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"item_arena/splitshot_ultimate"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_damage"					"50"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_strength"				"40"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_agility"					"40"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_intellect"				"40"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_attack_speed"			"20"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_movement_speed_pct"		"20"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"spell_amp_pct"					"16"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"manacost_reduction_pct"		"16"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"maim_chance_pct"				"50"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"maim_slow_movement_pct"		"-32"
+			}
+			"11"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"maim_slow_attack"				"-32"
+			}
+			"12"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"maim_slow_movement_range_pct"	"-16"
+			}
+			"13"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"maim_slow_attack_range"		"-16"
+			}
+			"14"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"maim_duration"					"5"
+			}
+			"15"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"split_damage_pct"				"60"
+			}
+			"16"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"split_radius"					"375"
+			}
+			"17"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"global_attack_chance_pct"		"5"
+			}
+		}
+	}
+}

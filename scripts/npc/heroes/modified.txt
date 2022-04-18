@@ -1,0 +1,66 @@
+"DOTAHeroes"
+{
+	"npc_dota_hero_base"
+	{
+		"override_hero"	"npc_dota_hero_base"
+		"MagicalResistance"		"25"
+	}
+
+	"npc_dota_hero_ogre_magi"
+	{
+		"override_hero"	"npc_dota_hero_ogre_magi"
+		"Changed"	"1"
+		"Ability6"	"ogre_magi_multicast_arena"
+		"AttackRate"	"1.7"
+		"ArmorPhysical"	"4"
+		"AttributeStrengthGain"	"2.5"
+		"AttributeAgilityGain"	"2.5"
+		"MovementSpeed"	"305"
+		"AttributeIntelligenceGain"	"2.5"
+	}
+
+	"npc_dota_hero_doom_bringer"
+	{
+		"override_hero"	"npc_dota_hero_doom_bringer"
+		"Changed"	"1"
+		"Ability1"	"doom_bringer_devour_arena"
+		"AttackRate"	"1.6"
+		"ArmorPhysical"	"3"
+		"AttributeStrengthGain"	"2.8"
+		"AttributeAgilityGain"	"2.4"
+		"MovementSpeed"	"300"
+		"AttributeIntelligenceGain"	"2.3"
+	}
+
+	"npc_dota_hero_huskar"
+	{
+		"override_hero"	"npc_dota_hero_huskar"
+		"Changed"	"1"
+		"Ability2"	"huskar_burning_spear_arena"
+		"AttackRate"	"1.7"
+		"ArmorPhysical"	"-2"
+	}
+
+	"npc_dota_hero_pudge"
+	{
+		"override_hero"	"npc_dota_hero_pudge"
+		"Changed"	"1"
+		"Ability1"	"pudge_meat_hook_lua"
+		"Ability2"	"pudge_rot_arena"
+		"Ability3"	"pudge_flesh_heap_arena"
+		"Ability4"	"generic_hidden"
+		"Ability5"	"generic_hidden"
+		"Ability6"	"pudge_dismember_arena"
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+		"Ability16"	""
+		"AttackRate"	"1.6"
+	}
+}
